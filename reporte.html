@@ -1,0 +1,1528 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiI+PGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImdhIiB4MT0iMCIgeTE9IjAuMzciIHgyPSIxIiB5Mj0iMC42MyI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMEIyQThBIi8+PHN0b3Agb2Zmc2V0PSIuNTgiIHN0b3AtY29sb3I9IiMxNzQwQzQiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMyQzU2RTAiLz48L2xpbmVhckdyYWRpZW50PgogICAgPGNsaXBQYXRoIGlkPSJ0YSI+PHJlY3Qgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiIHJ4PSIxMTYiLz48L2NsaXBQYXRoPgogICAgPGNsaXBQYXRoIGlkPSJjYSI+PHBvbHlnb24gcG9pbnRzPSIyNTAsNDYgNjQwLC0xNDAgNjQwLDMwMCAyNTAsMzAwIi8+PC9jbGlwUGF0aD4KICAgIDxjbGlwUGF0aCBpZD0ib2EiPjxjaXJjbGUgY3g9IjIyNiIgY3k9IjMwMCIgcj0iMTM2Ii8+PC9jbGlwUGF0aD4KICA8L2RlZnM+CiAgPGcgY2xpcC1wYXRoPSJ1cmwoI3RhKSI+CiAgICA8cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgZmlsbD0idXJsKCNnYSkiLz4KICAgIDxjaXJjbGUgY3g9IjQ1MiIgY3k9IjU4IiByPSIxOTYiIGZpbGw9IiNFNTE0MkIiIGNsaXAtcGF0aD0idXJsKCNjYSkiLz4KICAgIDxnIGZpbGw9IiNmZmYiPgogICAgICA8cmVjdCB4PSIxNDgiIHk9IjMxOCIgd2lkdGg9IjQ0IiBoZWlnaHQ9Ijc4IiByeD0iMTEiIG9wYWNpdHk9Ii42Ii8+CiAgICAgIDxyZWN0IHg9IjIwNCIgeT0iMjcwIiB3aWR0aD0iNDQiIGhlaWdodD0iMTI2IiByeD0iMTEiIG9wYWNpdHk9Ii44MiIvPgogICAgICA8cmVjdCB4PSIyNjAiIHk9IjIxNCIgd2lkdGg9IjQ0IiBoZWlnaHQ9IjE4MiIgcng9IjExIi8+CiAgICA8L2c+CiAgICA8Y2lyY2xlIGN4PSIyMjYiIGN5PSIzMDAiIHI9IjEzNiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjIyIi8+CiAgICA8cGF0aCBkPSJNMzMwIDE3NiBMNDAyIDEwNCIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICAgIDxwYXRoIGQ9Ik0zNTYgOTggSDQwOCBWMTUwIiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgogIDwvZz48L3N2Zz4=">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>GLOBAL KPI · Resumen personalizado por asesor</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&display=swap" rel="stylesheet">
+<style>:root{
+  --azul:#0B2A8A;        /* azul Venejugos profundo */
+  --azul-med:#1740C4;
+  --azul-claro:#E8EDFB;
+  --rojo:#E5142B;
+  --rojo-oscuro:#B00C1F;
+  --blanco:#FFFFFF;
+  --papel:#F4F6FC;
+  --tinta:#10193A;
+  --gris:#66708F;
+  --linea:#D8DFF2;
+  --verde:#128C5A;
+  --ambar:#E08A00;
+  --sombra:0 1px 2px rgba(11,42,138,.10), 0 8px 24px rgba(11,42,138,.07);
+  --radio:14px;
+  color-scheme: light;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  font-family:'Manrope',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  background:var(--papel); color:var(--tinta);
+  font-variant-numeric:tabular-nums; -webkit-font-smoothing:antialiased;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+
+/* ---------- Encabezado ---------- */
+.barra{
+  background:linear-gradient(105deg,var(--azul) 0%,var(--azul-med) 58%,#2C56E0 100%);
+  color:#fff; position:relative; overflow:hidden;
+}
+.barra::after{
+  content:""; position:absolute; right:-70px; top:-60px; width:260px; height:260px;
+  background:var(--rojo); border-radius:50%; opacity:.9;
+  clip-path:polygon(0 40%,100% 0,100% 100%,0 100%);
+}
+.barra-in{display:flex; gap:18px; align-items:center; padding:18px 26px; position:relative; z-index:2; flex-wrap:wrap}
+.logo{width:56px;height:56px;border-radius:12px;background:#fff;padding:5px;flex:0 0 auto;box-shadow:0 4px 14px rgba(0,0,0,.18)}
+.logo-der{width:60px;height:60px;border-radius:0;flex:0 0 auto;margin-left:14px;border:2px solid #fff;box-shadow:0 4px 14px rgba(0,0,0,.25)}
+.tit h1{font-size:1.5rem;letter-spacing:-.01em}
+.tit p .panel{color:#fff;font-weight:800}
+.tit h1{margin:0;font-size:1.32rem;font-weight:800;letter-spacing:-.02em;line-height:1.15}
+.tit p{margin:3px 0 0;font-size:.82rem;color:#C9D6FF;font-weight:500}
+.sello{
+  margin-left:auto;display:flex;gap:8px;align-items:center;background:rgba(255,255,255,.12);
+  border:1px solid rgba(255,255,255,.28);border-radius:999px;padding:7px 15px;font-size:.76rem;font-weight:700
+}
+.sello b{color:#fff}
+
+/* ---------- Cinta de filtros ---------- */
+.filtros{
+  display:flex;gap:12px;align-items:flex-end;flex-wrap:wrap;
+  background:#fff;border-bottom:1px solid var(--linea);padding:12px 26px;
+  position:sticky;top:env(safe-area-inset-top,0px);z-index:20
+}
+.campo{display:flex;flex-direction:column;gap:4px;min-width:150px}
+.campo label{font-size:.68rem;font-weight:700;color:var(--gris);letter-spacing:.03em}
+select,input[type=number],input[type=text],input[type=password],input[type=file]{
+  font-family:inherit;font-size:.86rem;padding:8px 10px;border:1.5px solid var(--linea);
+  border-radius:9px;background:#fff;color:var(--tinta);min-width:140px
+}
+select:focus,input:focus{outline:2px solid var(--azul-med);outline-offset:1px;border-color:var(--azul-med)}
+.btn{
+  font-family:inherit;font-size:.84rem;font-weight:700;padding:9px 18px;border-radius:9px;border:0;
+  background:var(--rojo);color:#fff;cursor:pointer;transition:background .15s
+}
+.btn:hover{background:var(--rojo-oscuro)}
+.btn.azul{background:var(--azul)} .btn.azul:hover{background:var(--azul-med)}
+.btn.linea{background:#fff;color:var(--azul);border:1.5px solid var(--linea)}
+.btn.linea:hover{background:var(--azul-claro)}
+.btn:focus-visible{outline:3px solid var(--ambar);outline-offset:2px}
+
+/* ---------- Rejilla ---------- */
+main{padding:20px 26px 48px;max-width:1500px;margin:0 auto}
+.rej{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
+.c3{grid-column:span 3}.c4{grid-column:span 4}.c5{grid-column:span 5}
+.c6{grid-column:span 6}.c7{grid-column:span 7}.c8{grid-column:span 8}.c12{grid-column:span 12}
+@media(max-width:1080px){.c3{grid-column:span 6}.c4,.c5,.c6,.c7,.c8{grid-column:span 12}}
+@media(max-width:620px){.c3{grid-column:span 12}}
+
+.tarjeta{background:#fff;border:1px solid var(--linea);border-radius:var(--radio);box-shadow:var(--sombra);padding:16px 18px}
+.tarjeta h3{margin:0 0 2px;font-size:.95rem;font-weight:800;letter-spacing:-.01em}
+.tarjeta .sub{margin:0 0 12px;font-size:.74rem;color:var(--gris)}
+
+/* KPI */
+.kpi{position:relative;overflow:hidden}
+.kpi::before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--azul)}
+.kpi.rojo::before{background:var(--rojo)}
+.kpi.verde::before{background:var(--verde)}
+.kpi.ambar::before{background:var(--ambar)}
+.kpi .rot{font-size:.72rem;font-weight:700;color:var(--gris);margin:0 0 6px}
+.kpi .val{font-size:1.9rem;font-weight:800;letter-spacing:-.03em;line-height:1;margin:0}
+.kpi .val small{font-size:.9rem;font-weight:700;color:var(--gris);margin-left:4px}
+.kpi .pie{margin:8px 0 0;font-size:.74rem;color:var(--gris);line-height:1.45}
+.kpi .pie b{color:var(--tinta)}
+
+.barrita{height:7px;background:var(--azul-claro);border-radius:99px;overflow:hidden;margin-top:10px}
+.barrita span{display:block;height:100%;border-radius:99px;background:var(--azul-med)}
+.barrita span.ok{background:var(--verde)} .barrita span.mal{background:var(--rojo)} .barrita span.med{background:var(--ambar)}
+
+/* Tablas */
+.tw{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:.82rem}
+th{
+  text-align:right;font-weight:700;color:#fff;background:var(--azul);
+  padding:9px 10px;white-space:nowrap;position:sticky;top:0
+}
+th:first-child,td:first-child{text-align:left}
+td{padding:8px 10px;text-align:right;border-bottom:1px solid var(--linea);white-space:nowrap}
+tbody tr:nth-child(even){background:#FAFBFF}
+tbody tr:hover{background:var(--azul-claro)}
+tfoot td{font-weight:800;background:var(--azul-claro);border-top:2px solid var(--azul)}
+.pill{display:inline-block;padding:2px 9px;border-radius:99px;font-size:.72rem;font-weight:800}
+.pill.ok{background:#DCF3E9;color:var(--verde)}
+.pill.med{background:#FDF0D8;color:var(--ambar)}
+.pill.mal{background:#FBE0E3;color:var(--rojo-oscuro)}
+
+.grafico{position:relative;height:300px}
+.grafico.alto{height:380px}
+.grafico.bajo{height:210px}
+
+/* Resumen */
+.resumen{background:linear-gradient(160deg,#fff 0%,#F7F9FF 100%);border-left:5px solid var(--rojo)}
+.resumen p{font-size:.88rem;line-height:1.62;margin:0 0 12px;max-width:78ch;color:#1D2748}
+.resumen p:last-child{margin-bottom:0}
+.notas{font-size:.72rem;color:var(--gris);line-height:1.55}
+
+dialog{border:0;border-radius:16px;padding:0;max-width:820px;width:92%;box-shadow:0 30px 80px rgba(11,42,138,.35)}
+dialog::backdrop{background:rgba(11,25,58,.55)}
+dialog .cab{background:var(--azul);color:#fff;padding:16px 22px;display:flex;justify-content:space-between;align-items:center}
+dialog .cab h3{margin:0;font-size:1rem}
+dialog .cue{padding:20px 22px;max-height:65vh;overflow:auto}
+
+.pie-doc{margin-top:26px;padding-top:14px;border-top:2px solid var(--linea);font-size:.72rem;color:var(--gris);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+/* Impresión */
+@media print{
+  @page{size:A4 landscape;margin:9mm}
+  body{background:#fff}
+  .filtros,.no-print{display:none!important}
+  .barra{position:static}
+  main{padding:0;max-width:none}
+  .tarjeta{box-shadow:none;border:1px solid #C8D2EC;break-inside:avoid;page-break-inside:avoid}
+  .rej{gap:9px}
+  .grafico{height:230px}
+  .salto{break-before:page;page-break-before:always}
+}
+
+.acceso{min-height:calc(100vh - 96px);display:grid;place-items:center;padding:28px}
+.caja{width:100%;max-width:420px;background:#fff;border:1px solid var(--linea);border-radius:18px;box-shadow:var(--sombra);padding:30px}
+.caja img{width:76px;display:block;margin:0 auto 14px}
+.caja h2{margin:0 0 4px;text-align:center;font-size:1.12rem}
+.caja p.ay{margin:0 0 20px;text-align:center;font-size:.8rem;color:var(--gris)}
+.caja input{width:100%;font-size:1rem;text-align:center;letter-spacing:.12em}
+.caja .btn{width:100%;margin-top:14px;padding:12px}
+.err{color:var(--rojo);font-size:.8rem;text-align:center;margin:10px 0 0;min-height:18px;font-weight:700}
+.zona-carga{border:2px dashed var(--linea);border-radius:14px;padding:26px;text-align:center;background:#FAFBFF;transition:border-color .15s,background .15s}
+.zona-carga.activa{border-color:var(--azul-med);background:var(--azul-claro)}
+.zona-carga p{margin:6px 0 0;font-size:.8rem;color:var(--gris)}
+.filaparam{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px}
+.log{font-size:.78rem;line-height:1.6;background:#0E1B3F;color:#C9D6FF;border-radius:10px;padding:14px;max-height:200px;overflow:auto;font-family:ui-monospace,Menlo,monospace}
+.log b{color:#fff}
+.ok-msg{background:#DCF3E9;color:var(--verde);border-radius:10px;padding:10px 14px;font-size:.82rem;font-weight:700}
+
+.sup-cab{display:flex;align-items:center;gap:16px;margin-bottom:14px}
+.dona{flex:0 0 auto}
+.dona text{font-family:Arial,Helvetica,sans-serif;font-weight:700}
+.sup-cab .nom{font-size:1.02rem;font-weight:800;margin:0;line-height:1.2}
+.sup-cab .cifra{font-size:1.5rem;font-weight:800;letter-spacing:-.02em;margin:2px 0 0}
+.sup-cab .cifra small{font-size:.72rem;font-weight:700;color:var(--gris);display:block;letter-spacing:0}
+.equipo{list-style:none;margin:0;padding:0}
+.equipo li{display:flex;align-items:center;gap:10px;padding:8px 10px;border-radius:9px;font-size:.84rem}
+.equipo li+li{margin-top:4px}
+.equipo li.bajo{background:#FDF1F3;border:1px solid #F6C9D0}
+.equipo .punto{width:9px;height:9px;border-radius:50%;flex:0 0 auto}
+.equipo .quien{flex:1;font-weight:700}
+.equipo .par{font-family:Arial,Helvetica,sans-serif;color:var(--gris);white-space:nowrap}
+.equipo .par b{color:var(--tinta)}
+.equipo .tanto{font-weight:800;min-width:52px;text-align:right}
+.t-ok{color:var(--verde)} .t-med{color:var(--ambar)} .t-mal{color:var(--rojo)}
+.cintas{display:flex;height:9px;border-radius:99px;overflow:hidden;margin-bottom:14px;background:var(--azul-claro)}
+.cintas span{display:block}
+.aviso{border-left:5px solid var(--rojo);background:linear-gradient(160deg,#FFF5F6 0%,#fff 70%)}
+.aviso h3{color:var(--rojo-oscuro)}
+.chip{display:inline-block;padding:3px 10px;border-radius:99px;font-size:.74rem;font-weight:800;margin:3px 4px 0 0}
+.chip.mal{background:#FBE0E3;color:var(--rojo-oscuro)}
+.chip.med{background:#FDF0D8;color:var(--ambar)}
+td.sem{min-width:84px}
+td.sem small{display:block;font-size:.68rem;color:var(--gris);font-weight:600}
+td.fuera{color:var(--gris)}
+.pestanas{display:flex;gap:8px;border-bottom:2px solid var(--linea);padding-bottom:0}
+.pest{font-family:inherit;font-size:.86rem;font-weight:700;padding:10px 20px;border:0;background:transparent;color:var(--gris);cursor:pointer;border-bottom:3px solid transparent;margin-bottom:-2px}
+.pest:hover{color:var(--azul)}
+.pest.activa{color:var(--azul);border-bottom-color:var(--rojo)}
+.buscador{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:12px}
+.buscador input{min-width:260px}
+tr.grupo td{background:var(--azul-claro);font-weight:800;border-top:2px solid var(--azul)}
+tr.granTotal td{background:var(--azul);color:#fff;font-weight:800}
+tr.granTotal .pill{background:rgba(255,255,255,.18);color:#fff}
+/* ---------- Macro: complementos ---------- */
+.kpi.mini .val{font-size:1.45rem}
+.chk{width:18px;height:18px;accent-color:var(--rojo);cursor:pointer}
+td input[type=number],td input[type=text]{min-width:0;width:100%;max-width:120px;padding:5px 7px;font-size:.8rem;text-align:right}
+td input[type=text]{text-align:left;max-width:180px}
+tr.foco td:first-child{box-shadow:inset 4px 0 0 var(--rojo)}
+.etq{display:inline-block;font-size:.66rem;font-weight:800;padding:1px 7px;border-radius:99px;background:#FBE0E3;color:var(--rojo-oscuro);margin-left:6px;vertical-align:middle}
+.etq.azul{background:var(--azul-claro);color:var(--azul)}
+.vacio{padding:18px;border:1.5px dashed var(--linea);border-radius:12px;color:var(--gris);font-size:.82rem;text-align:center;background:#FAFBFF}
+
+th.izq,td.izq{text-align:left}
+/* encabezado en una sola línea con el logo GLOBAL KPI fijo a la derecha */
+@media (min-width:900px){
+  .barra-in{flex-wrap:nowrap}
+  .tit{flex:1 1 auto;min-width:0}
+  .tit p{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .barra-in .sello,.barra-in .btn{flex:0 1 auto;min-width:0;white-space:nowrap}
+  #selloArchivo{max-width:240px!important}
+  .tit + .sello{margin-left:12px}
+}
+@media (min-width:900px){
+  .barra-in .sello{overflow:hidden;text-overflow:ellipsis;flex:0 1 auto}
+  .barra-in .btn{flex:0 0 auto}
+}
+@media (max-width:1280px){ #selloAct,#selloArchivo{display:none!important} }
+@media (max-width:899px){ .logo-der{position:absolute;top:18px;right:18px;width:52px;height:52px;margin:0} }
+@media (min-width:900px){
+  .barra-in .sello{flex:0 0 auto}
+  .barra-in #selloArchivo,.barra-in #selloAct{flex:0 1 auto;min-width:80px}
+}
+</style>
+<style id="estiloDoc">
+/* ---------- Documento: mismo formato del modelo "Seguimiento por Asesor" ---------- */
+.hoja{background:#fff;max-width:860px;margin:0 auto;padding:44px 52px;border:1px solid var(--linea);box-shadow:var(--sombra);font-family:Arial,Helvetica,sans-serif;color:#0E1A38}
+.doc-portada{text-align:center;margin-bottom:22px}
+.doc-portada img{width:64px;height:auto;display:block;margin:0 auto 10px}
+.doc-kicker{font-size:11px;font-weight:700;color:#6A7796;letter-spacing:.04em;margin:0}
+.doc-titulo{font-size:22px;font-weight:700;color:#1230A8;margin:4px 0 2px}
+.doc-sub{font-size:11px;color:#6A7796;margin:0}
+.doc h2{font-size:17px;font-weight:700;color:#1230A8;margin:26px 0 10px;padding-bottom:6px;border-bottom:2px solid #E30613}
+.doc h3{font-size:12.5px;font-weight:700;color:#1230A8;margin:18px 0 6px}
+.doc table{width:100%;border-collapse:collapse;font-size:11px;margin:0}
+.doc th{background:#1230A8;color:#fff;font-weight:700;padding:5px 7px;text-align:center;border:1px solid #1230A8;position:static;white-space:nowrap}
+.doc th:first-child{text-align:left}
+.doc td{padding:4px 7px;border:1px solid #D9DFEE;text-align:center;white-space:normal}
+.doc td:first-child{text-align:left;font-weight:700}
+.doc tbody tr:nth-child(even) td{background:#F7F9FF}
+.doc tbody tr:hover td{background:inherit}
+.doc tbody tr:nth-child(even):hover td{background:#F7F9FF}
+.doc tfoot td{font-weight:700;background:#E8EDFB;border-top:2px solid #1230A8}
+.doc .rojo{color:#E30613}
+.doc .nota{font-size:10px;font-style:italic;color:#6A7796;margin:4px 0 0}
+.doc .focos td:first-child{width:24%}
+.doc .focos td:last-child{text-align:left;font-weight:400}
+.doc .fuente{font-size:10px;font-style:italic;color:#6A7796;margin-top:22px}
+.doc .pie-hoja{font-size:9.5px;color:#6A7796;text-align:center;margin-top:18px;border-top:1px solid #D9DFEE;padding-top:8px}
+.doc .asesor{margin-top:6px}
+.doc .salto{border-top:1px dashed #C8D2EC;margin:30px -52px 0;padding:0 52px}
+.doc .vacio-doc{font-size:11px;color:#6A7796;font-style:italic;padding:8px 0}
+.panelf{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+.lista-chk{max-height:170px;overflow:auto;border:1.5px solid var(--linea);border-radius:9px;padding:6px 10px;background:#fff}
+.lista-chk label{display:flex;gap:8px;align-items:center;font-size:.8rem;padding:3px 0;cursor:pointer}
+.lista-chk .chk{width:16px;height:16px}
+.mini-acc{display:flex;gap:6px;margin-top:4px}
+.mini-acc button{font-family:inherit;font-size:.7rem;font-weight:700;border:0;background:none;color:var(--azul-med);cursor:pointer;padding:0}
+@media print{
+  @page{size:A4 portrait;margin:14mm 13mm 16mm;@bottom-center{content:"Venejugos C.A. · Evaluación de KPI's · GLOBAL KPI · Página " counter(page);font-family:Arial;font-size:8.5pt;color:#6A7796}}
+  .barra,.no-print,.filtros{display:none!important}
+  body{background:#fff}
+  main{padding:0;max-width:none}
+  .hoja{border:0;box-shadow:none;padding:0;max-width:none}
+  .doc .salto{break-before:page;page-break-before:always;border:0;margin:0;padding:0}
+  .doc .pie-hoja{display:none}
+  .doc table,.doc h3{break-inside:avoid}
+  .doc h3{break-after:avoid}
+}
+</style>
+</head>
+<body>
+
+<header class="barra">
+  <div class="barra-in">
+    <img class="logo" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAEEAQQDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD7LooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiig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XzbPPP20JEbUfDCBwWEVwSM84LIBXu+seH9O8TeEW0TVoPOtLm3RHXOCpwMMD2IPINeDeDfhZ468ZeM4PEnxLeWOGBlYxTspklCnKxhV+VEz19a+l4l2rgfpXFhYupOpUlGylbR+R9NntenhMLhMDRqKU6XM3KLuk5NNJPytufMuo/s7eKbW+nh0DxTb/wBnTHDCZpYnK+jBMq9b3g/4C3nhfxZ4d12312G7NlP5l7G8JQHggeXjPr0avf8AApGAx0qll1BO9vx2MqvGeb1aTpymrNNP3VeSatq7XZ43+0JD4I1efQvDviG5uLXV72fZp1zAgY24YhS0mSB5ZbAx1z06V5+P2efGPnDTpPFVgNKDZx5kxA/7Zfdz+Nem/Hv4Xt47tLe+0yeO31iyUrH5hwk0ZOdhPbB5B7ZPrXlbaX+0RLY/8I1J/an2QjyvNM0XKdMedndjH41yYunH2zdSDfZrr5M93h/E1o5fCODxcISTfNGpb3ddJQuu34h+zKkul/GjWNHsLo3dgltcRPMBxII5FCP7c5/OvUfjH8G7DxzcjV7G6Gm6yFCNKU3RTqOm8DnI7MP1qf4D/DFfAWnz3WoTRXGs3igTvGPkiQciNe555J7mvVByK6MLhF9X9nVW+tux5OfcQyec/XMDU1ilHm/maVm2tmmfMGn/ALPfjLUb2GPxL4otzZQnCmOaW4cL6KHAC17hB4Yk8N+AJdA8FLBaXMVuyWb3GSolP8bkDJOck8V19Fb0cHSo3cd316nk5jxDjsxUY12uWLuopJRv3aW58vXfwQ+KupyONV8XWs8UzZm8y9nkB5z9zaAfpXuPwr8E2fgTwvFo1rK9xIXMtxOy4Msh6nHYcYA9K7DA9KKKODp0Zc6u35srMeIsbj6Cw8+WME72jFRTa723Ciiiuo8IKKKKACiiigAooooAKKKKACiiigAooooAKa/Q+tOoIzQB8B/tN+DLnwj8U9QkWBk0zVpGvbFwPlO45kQe6sTx6EV5b71+lfjzwdoHjTQpNG8Qael5bN8yc7Xifs6MOVYeor591n9kmN7sto/jKSK2J4S7sw7qPTcpAP5Cvt8q4hoRoKliHZrTumeHisvqOo5U9Uz5W4AJJwAMk19x/sh+Crrwt8NDf6lbtBf61OLto3XDJEFAiUjscZbH+1VX4Zfs2eE/C+pQ6prV3N4hvIWDRJPGI7dGHRvLGdxH+0SPavdFVVGAMVwZ5ndPF0/YUPh6v/I6MDgpUnzz3FowPQUUV8ueoGB6UUUUAFFFFABgelGB6CiigAwPQUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAARRiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA/9k=" alt="Venejugos">
+    <div class="tit">
+      <h1>GLOBAL KPI</h1>
+      <p><b class="panel">Resumen personalizado por asesor</b> <span id="subtit">· seguimiento por supervisión, generado con el último reporte cargado</span></p>
+    </div>
+    <div class="sello" id="selloMes">—</div>
+    <div class="sello" id="selloArchivo" style="margin-left:0;max-width:300px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">—</div>
+    <img class="logo-der" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiI+PGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImdhIiB4MT0iMCIgeTE9IjAuMzciIHgyPSIxIiB5Mj0iMC42MyI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMEIyQThBIi8+PHN0b3Agb2Zmc2V0PSIuNTgiIHN0b3AtY29sb3I9IiMxNzQwQzQiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMyQzU2RTAiLz48L2xpbmVhckdyYWRpZW50PgogICAgPGNsaXBQYXRoIGlkPSJ0YSI+PHJlY3Qgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiLz48L2NsaXBQYXRoPgogICAgPGNsaXBQYXRoIGlkPSJjYSI+PHBvbHlnb24gcG9pbnRzPSIyNTAsNDYgNjQwLC0xNDAgNjQwLDMwMCAyNTAsMzAwIi8+PC9jbGlwUGF0aD4KICAgIDxjbGlwUGF0aCBpZD0ib2EiPjxjaXJjbGUgY3g9IjIyNiIgY3k9IjMwMCIgcj0iMTM2Ii8+PC9jbGlwUGF0aD4KICA8L2RlZnM+CiAgPGcgY2xpcC1wYXRoPSJ1cmwoI3RhKSI+CiAgICA8cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgZmlsbD0idXJsKCNnYSkiLz4KICAgIDxjaXJjbGUgY3g9IjQ1MiIgY3k9IjU4IiByPSIxOTYiIGZpbGw9IiNFNTE0MkIiIGNsaXAtcGF0aD0idXJsKCNjYSkiLz4KICAgIDxnIGZpbGw9IiNmZmYiPgogICAgICA8cmVjdCB4PSIxNDgiIHk9IjMxOCIgd2lkdGg9IjQ0IiBoZWlnaHQ9Ijc4IiByeD0iMTEiIG9wYWNpdHk9Ii42Ii8+CiAgICAgIDxyZWN0IHg9IjIwNCIgeT0iMjcwIiB3aWR0aD0iNDQiIGhlaWdodD0iMTI2IiByeD0iMTEiIG9wYWNpdHk9Ii44MiIvPgogICAgICA8cmVjdCB4PSIyNjAiIHk9IjIxNCIgd2lkdGg9IjQ0IiBoZWlnaHQ9IjE4MiIgcng9IjExIi8+CiAgICA8L2c+CiAgICA8Y2lyY2xlIGN4PSIyMjYiIGN5PSIzMDAiIHI9IjEzNiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjIyIi8+CiAgICA8cGF0aCBkPSJNMzMwIDE3NiBMNDAyIDEwNCIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICAgIDxwYXRoIGQ9Ik0zNTYgOTggSDQwOCBWMTUwIiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgogIDwvZz48L3N2Zz4=" alt="GLOBAL KPI">
+  </div>
+</header>
+
+<section class="filtros no-print">
+  <button class="btn linea" id="bVolver">Volver a Performance vendedores por marca</button>
+  <button class="btn linea" id="bRecargar">Recargar datos</button>
+  <button class="btn azul" id="bWord">Descargar para Word</button>
+  <button class="btn" id="bPrint">Imprimir o guardar en PDF</button>
+  <span id="estado" style="font-size:.74rem;color:var(--gris);margin-left:auto"></span>
+</section>
+
+<main>
+  <div class="tarjeta no-print" style="margin-bottom:18px">
+    <h3>Arme el reporte</h3>
+    <p class="sub">Elija qué supervisiones, asesores, marcas y secciones van en el documento. Nestlé queda fuera de todos los cálculos. Se recalcula al instante y se regenera solo cada vez que el panel admin publica un reporte nuevo. La selección queda guardada en este navegador.</p>
+    <div class="panelf">
+      <div class="campo"><label>Supervisiones</label><div class="lista-chk" id="lSup"></div>
+        <div class="mini-acc"><button data-todo="lSup">Todas</button><button data-nada="lSup">Ninguna</button></div></div>
+      <div class="campo"><label>Asesores</label><div class="lista-chk" id="lAse"></div>
+        <div class="mini-acc"><button data-todo="lAse">Todos</button><button data-nada="lAse">Ninguno</button></div></div>
+      <div class="campo"><label>Marcas del reporte (sin Nestlé)</label><div class="lista-chk" id="lMar"></div>
+        <div class="mini-acc"><button data-todo="lMar">Todas</button><button data-nada="lMar">Ninguna</button><button id="bTop8">8 de mayor venta</button></div></div>
+      <div class="campo"><label>Secciones del documento</label><div class="lista-chk" id="lSec"></div></div>
+    </div>
+    <div class="panelf" style="margin-top:14px">
+      <div class="campo"><label for="fCorte">Corte</label><select id="fCorte"></select></div>
+      <div class="campo"><label for="fMedR">Rolling en</label><select id="fMedR"><option value="kg">Kilos</option><option value="usd">Venta en US$</option></select></div>
+      <div class="campo"><label for="fMedM">Venta de marcas en</label><select id="fMedM"><option value="usd">Venta en US$</option><option value="kg">Kilos</option></select></div>
+      <div class="campo"><label for="fMeta">Meta de activación de cartera (%)</label><input id="fMeta" type="number" min="0" max="100" step="1"></div>
+      <div class="campo"><label for="fUmbG">Rojo en posición general bajo (%)</label><input id="fUmbG" type="number" min="0" max="100" step="1"></div>
+      <div class="campo"><label for="fUmb">Crítico en marcas bajo (%)</label><input id="fUmb" type="number" min="0" max="100" step="1"></div>
+      <div class="campo"><label for="fOrden">Orden de asesores</label><select id="fOrden"><option value="act">% activación, de menor a mayor</option><option value="roll">% rolling, de menor a mayor</option><option value="nom">Nombre</option></select></div>
+    </div>
+  </div>
+
+  <div class="hoja"><div class="doc" id="doc"></div></div>
+  <div class="pie-doc no-print"><span id="pieArchivo"></span><span>Venejugos C.A. · Ventas 0412 501-6394 · @Venejugos</span></div>
+</main>
+
+<script>/* ============================================================
+   GLOBAL KPI · Motor de cálculo (todas las marcas) · Venejugos
+   Réplica del modelo de cumplimiento Nestlé a escala de portafolio:
+   la dimensión de evaluación es la marca (columna DescrMarca).
+   ============================================================ */
+const VJ = (function () {
+  const VERSION = "macro-1";
+  const PREFIJO = "vjm_";          /* llaves de almacenamiento propias del modelo macro */
+  const TARGET_DEF = 25;           /* target de activación por defecto para marcas sin target */
+  const FOCO_N = 5;                /* marcas foco por defecto: las de mayor venta */
+
+  /* Estructura comercial vigente (heredada del modelo Nestlé): supervisor y cartera
+     total asignada por asesor. Editable desde el panel administrativo. */
+  const CARTERAS = {
+    "SUGEI VEGA":         { ab: 92, conf: 81, tot: 121, sup: "SARA VELASQUEZ" },
+    "MANUEL MONTILLA":    { ab: 69, conf: 108, tot: 139, sup: "SARA VELASQUEZ" },
+    "JEFFERSON PRIETO":   { ab: 84, conf: 93, tot: 107, sup: "SARA VELASQUEZ" },
+    "RICARDO GONZALEZ":   { ab: 71, conf: 74, tot: 86,  sup: "SARA VELASQUEZ" },
+    "BETZI SANCHEZ":      { ab: 75, conf: 79, tot: 98,  sup: "RORAIMA SALAZAR" },
+    "MAYLIN GUTIERREZ":   { ab: 74, conf: 71, tot: 99,  sup: "RORAIMA SALAZAR" },
+    "ENLLYS NAVARRO":     { ab: 21, conf: 51, tot: 56,  sup: "RORAIMA SALAZAR" },
+    "JEINNY NIETO":       { ab: 59, conf: 97, tot: 110, sup: "RORAIMA SALAZAR" },
+    "DEYBER ALCANTARA":   { ab: 80, conf: 82, tot: 103, sup: "DANNY LA CRUZ" },
+    "LUIS FRIAS":         { ab: 96, conf: 106, tot: 124, sup: "DANNY LA CRUZ" },
+    "ZULEXIS MENDOZA":    { ab: 81, conf: 105, tot: 124, sup: "DANNY LA CRUZ" },
+    "ALEXANDER BORGES":   { ab: 55, conf: 104, tot: 111, sup: "DANNY LA CRUZ" },
+    "LISBETH FERRER":     { ab: 18, conf: 45, tot: 50,  sup: "RICARDO TEIXEIRA" },
+    "MARY SUAREZ":        { ab: 14, conf: 43, tot: 55,  sup: "RICARDO TEIXEIRA" },
+    "YEISON UMBRIA":      { ab: 52, conf: 48, tot: 54,  sup: "DIRECTO OFICINA" },
+    "KEIBER BETANCOURT":  { ab: 65, conf: 65, tot: 93,  sup: "DIRECTO OFICINA" },
+    "FRANCHESKA SANCHEZ": { ab: 8, conf: 20, tot: 20,  sup: "DIRECTO OFICINA" },
+    "DIRECTO OFICINA":    { ab: 7, conf: 9, tot: 12,  sup: "DIRECTO OFICINA" },
+    "VENEJUGOS EMPLEADOS":{ ab: 0, conf: 0, tot: 0,   sup: "DIRECTO OFICINA" }
+  };
+  const ALIAS_VEND = { "DIRECTO": "DIRECTO OFICINA" };
+  const MAESTRO_DEF = Object.values(CARTERAS).reduce((a, c) => a + c.tot, 0);
+
+  /* Tipo de documento (mismas reglas del modelo Nestlé) */
+  const TIPO_DOC = { FACTURA: 0, NC_TESORERIA: 1, NC_LIGADA: 2 };
+  const NC_ADMIN = /^(NCTESO|NCADM|NCTES|NCA)/;
+  function tipoDocumento(doc, origen) {
+    const d = String(doc == null ? "" : doc).toUpperCase().trim();
+    if (!/^N[CD]/.test(d)) return TIPO_DOC.FACTURA;
+    if (NC_ADMIN.test(d)) return TIPO_DOC.NC_TESORERIA;
+    return String(origen || "").trim() ? TIPO_DOC.NC_LIGADA : TIPO_DOC.NC_TESORERIA;
+  }
+
+  function norm(s) {
+    return String(s == null ? "" : s)
+      .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+      .toUpperCase().trim().replace(/\s+/g, " ");
+  }
+
+  function num(v) {
+    if (v == null || v === "") return 0;
+    if (typeof v === "number") return isFinite(v) ? v : 0;
+    let s = String(v).trim().replace(/\s|\u00A0/g, "");
+    const coma = s.lastIndexOf(","), punto = s.lastIndexOf(".");
+    if (coma > -1 && punto > -1) {
+      s = coma > punto ? s.replace(/\./g, "").replace(",", ".") : s.replace(/,/g, "");
+    } else if (coma > -1) {
+      s = (s.length - coma - 1) === 3 && /^\d{1,3}(,\d{3})+$/.test(s) ? s.replace(/,/g, "") : s.replace(",", ".");
+    }
+    const n = parseFloat(s);
+    return isFinite(n) ? n : 0;
+  }
+  const hay = v => v != null && v !== "" && !(typeof v === "number" && isNaN(v));
+
+  function parseFecha(v) {
+    if (v instanceof Date) return { y: v.getFullYear(), m: v.getMonth() + 1, d: v.getDate() };
+    const s = String(v).trim().split(" ")[0];
+    let p = s.split(/[\/\-]/).map(Number);
+    if (p.length < 3 || p.some(isNaN)) return null;
+    if (p[0] > 31) return { y: p[0], m: p[1], d: p[2] };
+    return { y: p[2], m: p[1], d: p[0] };
+  }
+  const pad = n => String(n).padStart(2, "0");
+  const fechaTxt = f => `${pad(f.d)}/${pad(f.m)}/${f.y}`;
+
+  /* Día hábil: lunes a viernes que no sea feriado (los feriados se cargan en el panel administrativo) */
+  function esHabil(y, m, d, fer) {
+    const w = new Date(y, m - 1, d).getDay();
+    return w !== 0 && w !== 6 && !(fer && fer.has(fechaTxt({ y, m, d })));
+  }
+  function diasHabiles(y, m, fer) {
+    const n = new Date(y, m, 0).getDate();
+    let c = 0;
+    for (let d = 1; d <= n; d++) if (esHabil(y, m, d, fer)) c++;
+    return c;
+  }
+  function habilesHasta(y, m, d, fer) {
+    let c = 0;
+    for (let i = 1; i <= d; i++) if (esHabil(y, m, i, fer)) c++;
+    return c;
+  }
+  const isoDe = txt => { const f = parseFecha(txt); return f ? `${f.y}-${pad(f.m)}-${pad(f.d)}` : ""; };
+  const valorFecha = f => f.y * 1e4 + f.m * 100 + f.d;
+  function corteDe(ds, corte) {
+    const ult = parseFecha(ds.dias[ds.dias.length - 1]) || { y: ds.anio, m: ds.mesNum, d: 1 };
+    const c = corte ? parseFecha(corte) : null;
+    return (c && c.y === ds.anio && c.m === ds.mesNum) ? c : ult;
+  }
+  function tiempos(ds, corte, fer) {
+    const c = corteDe(ds, corte);
+    const diasTrans = habilesHasta(ds.anio, ds.mesNum, c.d, fer) || 1;
+    const habiles = diasHabiles(ds.anio, ds.mesNum, fer) || diasTrans;
+    return { c, corte: fechaTxt(c), diasTrans, habiles, restantes: Math.max(1, habiles - diasTrans),
+             factor: habiles / diasTrans, tt: diasTrans / habiles };
+  }
+
+  /* ---------- MAPEO TOLERANTE DE COLUMNAS ---------- */
+  const llave = s => norm(s).replace(/[^A-Z0-9]/g, "");
+  const CAMPOS = {
+    marca: ["DescrMarca", "DescMarca", "Marca", "NombreMarca"],
+    codMarca: ["CodMarca", "CodigoMarca"],
+    sub: ["DescrSubCategoría", "DescrSubCategoria", "SubCategoría", "Subcategoria"],
+    cat: ["DescrCategoría", "DescrCategoria", "Categoría", "Categoria"],
+    fecha: ["FechaFactura", "Fecha"],
+    cli: ["CódigoCliente", "CodigoCliente", "CodCliente", "RucCliente"],
+    nom: ["RazónSocial", "RazonSocial", "NombreCliente", "Cliente"],
+    ruc: ["RucCliente", "RUC", "RIF", "RifCliente"],
+    zona: ["DescZona", "Zona", "DescrZona"],
+    vend: ["NombreVend", "Vendedor", "NombreVendedor"],
+    sup: ["NombSuperv", "NombreSuperv", "Supervisor"],
+    kilos: ["Kilos", "PesoNeto", "Peso Neto"],
+    venta: ["PrecioTotal", "Precio Total", "Total con IVA"],
+    cant: ["Cantidad", "CantidadEnUnidadInventario"],
+    doc: ["NúmeroFactura", "NumeroFactura", "Documento", "NroDocumento"],
+    docOrigen: ["FacturaOrigen", "DocumentoOrigen", "NúmeroFacturaOrigen", "NumeroFacturaOrigen", "DocOrigen"]
+  };
+  const OPCIONALES = ["codMarca", "docOrigen", "ruc", "sup", "cant"];
+  function mapaColumnas(filas) {
+    const claves = filas.length ? Object.keys(filas[0]) : [];
+    const M = {};
+    Object.entries(CAMPOS).forEach(([k, alts]) => {
+      let hallado = null;
+      for (const a of alts) { hallado = claves.find(c => llave(c) === llave(a)); if (hallado) break; }
+      M[k] = hallado || null;
+    });
+    M.faltantes = Object.keys(CAMPOS).filter(k => !M[k] && OPCIONALES.indexOf(k) < 0);
+    return M;
+  }
+
+  function repararHoja(ws) {
+    let maxR = 0, maxC = 0;
+    Object.keys(ws).forEach(k => {
+      if (k[0] === "!") return;
+      const c = XLSX.utils.decode_cell(k);
+      if (c.r > maxR) maxR = c.r;
+      if (c.c > maxC) maxC = c.c;
+    });
+    ws["!ref"] = XLSX.utils.encode_range({ s: { r: 0, c: 0 }, e: { r: maxR, c: maxC } });
+    return { filas: maxR + 1, columnas: maxC + 1 };
+  }
+
+  /* ---------- EMPAQUETADO: filas del Excel -> dataset compacto ----------
+     Fila: [cliente, zona, vendedor, MARCA, día, kilos, venta, unidades, tipoDoc, subcategoría, categoría] */
+  function pack(filas, nombreArchivo) {
+    const K = mapaColumnas(filas);
+    const V = (f, k, def) => (K[k] && hay(f[K[k]])) ? f[K[k]] : def;
+    const dims = ["marcas", "subs", "cats", "clientes", "zonas", "vends", "supers", "dias"];
+    const D = {}, I = {};
+    dims.forEach(k => { D[k] = []; I[k] = new Map(); });
+    const idx = (k, val) => { if (!I[k].has(val)) { I[k].set(val, D[k].length); D[k].push(val); } return I[k].get(val); };
+    const clientesNom = [], clientesRuc = [], supDeVend = [];
+
+    /* el mes evaluado es el de la fecha más reciente del archivo */
+    let ultima = null;
+    filas.forEach(f => {
+      const fe = parseFecha(V(f, "fecha", ""));
+      if (fe && (!ultima || fe.y * 1e4 + fe.m * 100 + fe.d > ultima.y * 1e4 + ultima.m * 100 + ultima.d)) ultima = fe;
+    });
+
+    const r = [];
+    let vacias = 0, fueraMes = 0, sinMarca = 0;
+    filas.forEach(f => {
+      const cli = String(V(f, "cli", "")).trim();
+      const kg = num(V(f, "kilos", 0)), us = num(V(f, "venta", 0));
+      const marcaTxt = norm(V(f, "marca", "")) || norm(V(f, "codMarca", ""));
+      if (!cli && !marcaTxt && !kg && !us) { vacias++; return; }
+      const fe = parseFecha(V(f, "fecha", ""));
+      if (fe && ultima && (fe.y !== ultima.y || fe.m !== ultima.m)) { fueraMes++; return; }
+      if (!marcaTxt) sinMarca++;
+
+      const cIdx = idx("clientes", cli || "SIN CLIENTE");
+      if (!clientesNom[cIdx]) clientesNom[cIdx] = String(V(f, "nom", "")).trim();
+      if (!clientesRuc[cIdx]) clientesRuc[cIdx] = String(V(f, "ruc", "")).trim();
+      const vIdx = idx("vends", String(V(f, "vend", "SIN VENDEDOR")).trim() || "SIN VENDEDOR");
+      const sIdx = idx("supers", norm(V(f, "sup", "SIN SUPERVISOR")) || "SIN SUPERVISOR");
+      if (supDeVend[vIdx] == null) supDeVend[vIdx] = sIdx;
+      r.push([
+        cIdx,
+        idx("zonas", String(V(f, "zona", "SIN ZONA")).trim() || "SIN ZONA"),
+        vIdx,
+        idx("marcas", marcaTxt || "SIN MARCA"),
+        idx("dias", fe ? fechaTxt(fe) : "s/f"),
+        Math.round(kg * 1000) / 1000,
+        Math.round(us * 100) / 100,
+        Math.round(num(V(f, "cant", 0))),
+        tipoDocumento(V(f, "doc", ""), V(f, "docOrigen", "")),
+        idx("subs", norm(V(f, "sub", "")) || "SIN SUBCATEGORIA"),
+        idx("cats", norm(V(f, "cat", "")) || "SIN CATEGORIA")
+      ]);
+    });
+
+    /* días en orden cronológico */
+    const orden = D.dias.map((d, i) => ({ d, i })).sort((a, b) => {
+      const A = a.d.split("/"), B = b.d.split("/");
+      return (A[2] + A[1] + A[0]).localeCompare(B[2] + B[1] + B[0]);
+    });
+    const remap = {}; orden.forEach((o, k) => remap[o.i] = k);
+    r.forEach(row => row[4] = remap[row[4]]);
+
+    const y = ultima ? ultima.y : new Date().getFullYear(), m = ultima ? ultima.m : new Date().getMonth() + 1;
+    return {
+      version: VERSION, archivo: nombreArchivo || "archivo.xlsx",
+      generado: new Date().toLocaleString("es-VE"), ts: Date.now(),
+      mes: `${pad(m)}/${y}`, anio: y, mesNum: m, columnas: K,
+      descartadas: { vacias, fueraMes, sinMarca },
+      marcas: D.marcas, subs: D.subs, cats: D.cats,
+      clientes: D.clientes, clientesNom, clientesRuc, zonas: D.zonas, vends: D.vends,
+      supers: D.supers, supDeVend, dias: orden.map(o => o.d), r
+    };
+  }
+
+  /* ---------- PARÁMETROS ----------
+     cfg = { ts, universo, targetDef, medida: "usd"|"kg", corte, foco: [marcas],
+             marcas: { MARCA: { target, cuotaUsd, cuotaKg } },
+             vends:  { VENDEDOR: { sup, cartera, cuotaUsd, cuotaKg } } } */
+  function ranking(ds) {
+    const venta = new Map();
+    ds.r.forEach(x => { if ((x[8] || 0) !== TIPO_DOC.NC_TESORERIA) venta.set(x[3], (venta.get(x[3]) || 0) + x[6]); });
+    return ds.marcas.map((n, i) => ({ n, v: venta.get(i) || 0 })).sort((a, b) => b.v - a.v || a.n.localeCompare(b.n)).map(o => o.n);
+  }
+  const claveVend = n => ALIAS_VEND[norm(n)] || norm(n);
+
+  function params(ds, cfg) {
+    cfg = cfg || {};
+    const rk = ranking(ds);
+    const targetDef = hay(cfg.targetDef) ? num(cfg.targetDef) : TARGET_DEF;
+    const foco = Array.isArray(cfg.foco) && cfg.foco.length ? cfg.foco.slice() : rk.slice(0, FOCO_N);
+    const CM = cfg.marcas || {}, CV = cfg.vends || {};
+    const marca = n => {
+      const c = CM[n] || {};
+      return { target: hay(c.target) ? num(c.target) : targetDef, propio: hay(c.target),
+               cuotaUsd: num(c.cuotaUsd), cuotaKg: num(c.cuotaKg) };
+    };
+    const vend = (n, iV) => {
+      const k = claveVend(n), c = CV[k] || {}, base = CARTERAS[k];
+      const supArchivo = (iV != null && ds.supDeVend && ds.supDeVend[iV] != null) ? ds.supers[ds.supDeVend[iV]] : null;
+      return {
+        clave: k,
+        sup: norm(c.sup) || (base && base.sup) || supArchivo || "SIN SUPERVISOR",
+        cartera: hay(c.cartera) ? num(c.cartera) : (base ? base.tot : null),
+        cuotaUsd: num(c.cuotaUsd), cuotaKg: num(c.cuotaKg),
+        enEstructura: !!(base || CV[k])
+      };
+    };
+    const feriados = (Array.isArray(cfg.feriados) ? cfg.feriados : String(cfg.feriados || "").split(/[,;\s]+/))
+      .map(t => parseFecha(t)).filter(Boolean).map(fechaTxt);
+    return {
+      targetDef, foco, ranking: rk, marca, vend, feriados, fer: new Set(feriados),
+      universo: num(cfg.universo) > 0 ? num(cfg.universo) : MAESTRO_DEF,
+      medida: cfg.medida === "kg" ? "kg" : "usd", corte: cfg.corte || ""
+    };
+  }
+
+  /* ---------- FORMATOS ---------- */
+  const f0 = n => (n == null || isNaN(n)) ? "—" : Math.round(n).toLocaleString("es-VE");
+  const f1 = n => (n == null || isNaN(n)) ? "—" : n.toLocaleString("es-VE", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
+  const fp = n => (n == null || isNaN(n)) ? "—" : n.toLocaleString("es-VE", { minimumFractionDigits: 1, maximumFractionDigits: 1 }) + "%";
+  const fu = n => {
+    if (n == null || isNaN(n)) return "—";
+    const d = Math.abs(n) < 1000 ? 2 : 0;
+    return (n < 0 ? "−$" : "$") + Math.abs(n).toLocaleString("es-VE", { minimumFractionDigits: d, maximumFractionDigits: d });
+  };
+  const MEDIDAS = {
+    usd: { i: 6, u: "US$", cuota: "cuotaUsd", nombre: "venta en US$", fmt: fu, fmtCorto: fu },
+    kg:  { i: 5, u: "kg",  cuota: "cuotaKg",  nombre: "kilos", fmt: n => f1(n) + " kg", fmtCorto: f1 }
+  };
+  const medidaDe = m => MEDIDAS[m === "kg" ? "kg" : "usd"];
+
+  /* ---------- CÁLCULO DEL TABLERO MACRO ---------- */
+  function compute(ds, cfg, opt) {
+    opt = opt || {};
+    const P = params(ds, cfg);
+    const med = medidaDe(opt.medida || P.medida);
+    const zF = opt.zona && opt.zona !== "TODAS" ? ds.zonas.indexOf(opt.zona) : -1;
+    const vF = opt.vendedor && opt.vendedor !== "TODOS" ? ds.vends.indexOf(opt.vendedor) : -1;
+    const kF = opt.categoria && opt.categoria !== "TODAS" ? ds.cats.indexOf(opt.categoria) : -1;
+    const rows = ds.r.filter(x => (zF < 0 || x[1] === zF) && (vF < 0 || x[2] === vF) && (kF < 0 || x[10] === kF))
+      .filter(x => (x[8] || 0) !== TIPO_DOC.NC_TESORERIA);
+
+    /* universo de activación: maestro general, cartera del vendedor o clientes de la zona */
+    let universo, origenUniverso;
+    if (vF >= 0) {
+      const pv = P.vend(ds.vends[vF], vF);
+      universo = pv.cartera || new Set(rows.map(x => x[0])).size; origenUniverso = "cartera del vendedor";
+    } else if (zF >= 0) {
+      universo = new Set(ds.r.filter(x => x[1] === zF).map(x => x[0])).size; origenUniverso = "clientes atendidos en la zona";
+    } else { universo = P.universo; origenUniverso = "maestro de clientes"; }
+
+    const T = tiempos(ds, opt.corte != null ? opt.corte : P.corte, P.fer);
+    const factor = T.factor;
+    const acumula = () => ({ kilos: 0, venta: 0, unid: 0, cli: new Set() });
+    const glob = acumula();
+    const porMarca = new Map(), porCat = new Map(), porZona = new Map(), porVend = new Map(), porCli = new Map();
+    const focoIdx = new Set(P.foco.map(n => ds.marcas.indexOf(n)).filter(i => i >= 0));
+    const serie = ds.dias.map(d => ({ fecha: d.slice(0, 5), vol: 0, volFoco: 0, cli: new Set() }));
+
+    const suma = (map, key, kg, us, un, c, activa) => {
+      if (!map.has(key)) map.set(key, acumula());
+      const A = map.get(key); A.kilos += kg; A.venta += us; A.unid += un; if (activa) A.cli.add(c);
+      return A;
+    };
+    rows.forEach(x => {
+      const [c, z, v, m, d, kg, us, un] = x;
+      const activa = (x[8] || 0) === TIPO_DOC.FACTURA && us > 0;
+      const vol = x[med.i];
+      glob.kilos += kg; glob.venta += us; glob.unid += un; if (activa) glob.cli.add(c);
+      suma(porMarca, m, kg, us, un, c, activa);
+      suma(porCat, x[10], kg, us, un, c, activa);
+      suma(porZona, z, kg, us, un, c, activa);
+      suma(porVend, v, kg, us, un, c, activa);
+      const C = suma(porCli, c, kg, us, un, c, activa);
+      if (activa) (C.marcas = C.marcas || new Set()).add(m);
+      serie[d].vol += vol; if (focoIdx.has(m)) serie[d].volFoco += vol; if (activa) serie[d].cli.add(c);
+    });
+    const volDe = A => med.i === 6 ? A.venta : A.kilos;
+    const totalVenta = glob.venta;
+
+    const fila = nombre => {
+      const i = ds.marcas.indexOf(nombre);
+      const S = porMarca.get(i) || acumula();
+      const pm = P.marca(nombre);
+      const act = S.cli.size, pct = universo ? 100 * act / universo : 0;
+      const req = Math.ceil(universo * pm.target / 100);
+      const vol = volDe(S), cuota = pm[med.cuota];
+      return {
+        marca: nombre, foco: P.foco.indexOf(nombre) > -1,
+        activados: act, universo, pct, target: pm.target, targetPropio: pm.propio,
+        requeridos: req, faltan: Math.max(0, req - act),
+        cumpl: pm.target ? 100 * pct / pm.target : 100,
+        vol, volProy: vol * factor, cuota,
+        cumplVol: cuota ? 100 * vol / cuota : null,
+        cumplVolProy: cuota ? 100 * vol * factor / cuota : null,
+        faltanteVol: cuota ? Math.max(0, cuota - vol) : null,
+        faltanteVolProy: cuota ? cuota - vol * factor : null,
+        kilos: S.kilos, venta: S.venta, unid: S.unid,
+        share: totalVenta ? 100 * S.venta / totalVenta : 0
+      };
+    };
+
+    const foco = P.foco.map(fila);
+    let acum = 0;
+    const todas = Array.from(porMarca.keys()).map(i => fila(ds.marcas[i]))
+      .sort((a, b) => b.venta - a.venta || a.marca.localeCompare(b.marca))
+      .map(r => { acum += r.share; r.shareAcum = acum; return r; });
+
+    const lista = (map, nombres, key) => Array.from(map.entries())
+      .map(([k, A]) => ({ [key]: nombres[k], vol: volDe(A), kilos: A.kilos, venta: A.venta, clientes: A.cli.size,
+                          share: totalVenta ? 100 * A.venta / totalVenta : 0 }))
+      .sort((a, b) => b.vol - a.vol);
+
+    let ac = 0, acF = 0;
+    const serieOut = serie.map(s => { ac += s.vol; acF += s.volFoco; return { fecha: s.fecha, vol: s.vol, volFoco: s.volFoco, volAcum: ac, volFocoAcum: acF, clientes: s.cli.size }; });
+
+    const activados = glob.cli.size;
+    const vol = volDe(glob);
+    const volFoco = foco.reduce((a, r) => a + r.vol, 0);
+    const cuotaFoco = foco.reduce((a, r) => a + (r.cuota || 0), 0);
+    const cuotaTotal = ds.marcas.reduce((a, n) => a + P.marca(n)[med.cuota], 0);
+    const clientesAct = Array.from(porCli.values()).filter(C => C.marcas && C.marcas.size);
+    const profundidad = clientesAct.length ? clientesAct.reduce((a, C) => a + C.marcas.size, 0) / clientesAct.length : 0;
+    const n80 = (todas.findIndex(r => r.shareAcum >= 80) + 1) || todas.length;
+    const top5 = todas.slice(0, 5).reduce((a, r) => a + r.share, 0);
+    const conTarget = todas.filter(t => t.target > 0);
+
+    return {
+      medida: med, medidaClave: med.i === 6 ? "usd" : "kg",
+      meta: {
+        archivo: ds.archivo, generado: ds.generado, mes: ds.mes,
+        desde: ds.dias[0], hasta: ds.dias[ds.dias.length - 1],
+        diasTrans: T.diasTrans, habiles: T.habiles, restantes: T.restantes, factor, corte: T.corte,
+        registros: rows.length, zona: opt.zona || "TODAS", vendedor: opt.vendedor || "TODOS",
+        categoria: opt.categoria || "TODAS", origenUniverso, focoAuto: !(cfg && Array.isArray(cfg.foco) && cfg.foco.length)
+      },
+      glob: {
+        universo, activados, noActivados: Math.max(0, universo - activados),
+        pctAct: universo ? 100 * activados / universo : 0,
+        vol, volProy: vol * factor, volFoco, volFocoProy: volFoco * factor,
+        kilos: glob.kilos, venta: glob.venta, unid: glob.unid,
+        cuotaFoco, cuotaTotal,
+        cumplFocoVol: cuotaFoco ? 100 * volFoco / cuotaFoco : null,
+        cumplFocoVolProy: cuotaFoco ? 100 * volFoco * factor / cuotaFoco : null,
+        faltanteFoco: Math.max(0, cuotaFoco - volFoco), faltanteFocoProy: cuotaFoco - volFoco * factor,
+        cumplTotal: cuotaTotal ? 100 * vol / cuotaTotal : null,
+        cumplTotalProy: cuotaTotal ? 100 * vol * factor / cuotaTotal : null,
+        faltanteTotal: Math.max(0, cuotaTotal - vol), faltanteTotalProy: cuotaTotal - vol * factor,
+        cumplFoco: foco.length ? foco.reduce((a, t) => a + Math.min(100, t.cumpl || 0), 0) / foco.length : 0,
+        cumplPond: conTarget.length ? conTarget.reduce((a, t) => a + Math.min(100, t.cumpl), 0) / conTarget.length : 0,
+        marcasActivas: todas.filter(t => t.venta > 0).length, marcasTotal: ds.marcas.length,
+        profundidad, ventaCliente: activados ? glob.venta / activados : 0,
+        n80, top5, focoShare: foco.reduce((a, r) => a + r.share, 0)
+      },
+      foco, todas, serie: serieOut,
+      categorias: lista(porCat, ds.cats, "categoria"),
+      zonas: lista(porZona, ds.zonas, "zona"),
+      vendedores: lista(porVend, ds.vends, "vendedor"),
+      clientes: lista(porCli, ds.clientes, "cliente").slice(0, 15),
+      listaZonas: ds.zonas.slice().sort(), listaVends: ds.vends.slice().sort(), listaCats: ds.cats.slice().sort()
+    };
+  }
+
+  /* ---------- PERFORMANCE POR VENDEDOR Y SUPERVISOR ---------- */
+  function computeVend(ds, cfg, opt) {
+    opt = opt || {};
+    const P = params(ds, cfg);
+    const med = medidaDe(opt.medida || P.medida);
+    const mk = opt.marca && opt.marca !== "TODAS" ? opt.marca : "TODAS";
+    const mi = mk === "TODAS" ? -1 : ds.marcas.indexOf(mk);
+    const tgt = mk === "TODAS" ? 100 : P.marca(mk).target;
+    const vFil = opt.vendedor && opt.vendedor !== "TODOS" ? ds.vends.indexOf(opt.vendedor) : -1;
+    const filas = (vFil < 0 ? ds.r : ds.r.filter(x => x[2] === vFil)).filter(x => (x[8] || 0) !== TIPO_DOC.NC_TESORERIA);
+    const T = tiempos(ds, opt.corte != null ? opt.corte : P.corte, P.fer);
+    const porDia = faltan => faltan / T.restantes;
+
+    const atendidos = {}, activos = {}, volV = {};
+    filas.forEach(x => {
+      const [c, , v, m] = x;
+      (atendidos[v] = atendidos[v] || new Set()).add(c);
+      if (mi < 0 || m === mi) {
+        volV[v] = (volV[v] || 0) + x[med.i];
+        if ((x[8] || 0) === TIPO_DOC.FACTURA && x[6] > 0) (activos[v] = activos[v] || new Set()).add(c);
+      }
+    });
+
+    const vendedores = ds.vends.map((nom, i) => {
+      if (vFil >= 0 && i !== vFil) return null;
+      const pv = P.vend(nom, i);
+      const atendida = atendidos[i] ? atendidos[i].size : 0;
+      const base = pv.cartera != null ? pv.cartera : atendida;
+      const act = activos[i] ? activos[i].size : 0;
+      const meta = Math.round(base * tgt / 100);
+      const faltan = Math.max(0, meta - act);
+      return {
+        vendedor: nom, supervisor: pv.sup, enEstructura: pv.enEstructura, atendida,
+        cartera: base, meta, activados: act, faltan, vol: volV[i] || 0,
+        pctAct: base ? 100 * act / base : null,
+        pendienteAct: base ? 100 * faltan / base : null,
+        pct: meta ? 100 * act / meta : null,
+        pendiente: meta ? Math.max(0, 100 - 100 * act / meta) : null,
+        porDia: porDia(faltan)
+      };
+    }).filter(v => v && (v.cartera > 0 || v.atendida > 0));
+
+    const mapa = new Map();
+    vendedores.forEach(v => {
+      if (!mapa.has(v.supervisor)) mapa.set(v.supervisor, { supervisor: v.supervisor, cartera: 0, meta: 0, activados: 0, vol: 0, equipo: [] });
+      const S = mapa.get(v.supervisor);
+      S.cartera += v.cartera; S.meta += v.meta; S.activados += v.activados; S.vol += v.vol; S.equipo.push(v);
+    });
+    const supervisores = Array.from(mapa.values()).map(S => {
+      S.equipo.sort((a, b) => (b.pct || 0) - (a.pct || 0));
+      S.pct = S.meta ? 100 * S.activados / S.meta : null;
+      S.pendiente = S.pct == null ? null : Math.max(0, 100 - S.pct);
+      S.faltan = S.equipo.reduce((a, v) => a + v.faltan, 0);
+      S.pctAct = S.cartera ? 100 * S.activados / S.cartera : null;
+      S.pendienteAct = S.cartera ? 100 * S.faltan / S.cartera : null;
+      S.porDia = porDia(S.faltan);
+      return S;
+    }).sort((a, b) => (b.pct || 0) - (a.pct || 0));
+
+    const tot = vendedores.reduce((a, v) => ({ cartera: a.cartera + v.cartera, meta: a.meta + v.meta, activados: a.activados + v.activados, vol: a.vol + v.vol }), { cartera: 0, meta: 0, activados: 0, vol: 0 });
+    tot.sinCartera = 0;
+    if (mk === "TODAS" && vFil < 0 && P.universo > tot.cartera) {
+      tot.sinCartera = P.universo - tot.cartera;
+      tot.cartera = P.universo;
+      tot.meta = Math.round(P.universo * tgt / 100);
+    }
+    tot.pct = tot.meta ? 100 * tot.activados / tot.meta : null;
+    tot.pendiente = tot.pct == null ? null : Math.max(0, 100 - tot.pct);
+    tot.faltan = vendedores.reduce((a, v) => a + v.faltan, 0) + tot.sinCartera;
+    tot.pctAct = tot.cartera ? 100 * tot.activados / tot.cartera : null;
+    tot.pendienteAct = tot.cartera ? 100 * tot.faltan / tot.cartera : null;
+    tot.porDia = porDia(tot.faltan);
+
+    /* por marca, para el alcance filtrado */
+    const baseAlcance = vendedores.reduce((a, v) => a + v.cartera, 0) || new Set(filas.map(x => x[0])).size;
+    const actM = {}, volM = {};
+    filas.forEach(x => {
+      volM[x[3]] = (volM[x[3]] || 0) + x[med.i];
+      if (x[6] > 0 && (x[8] || 0) === TIPO_DOC.FACTURA) (actM[x[3]] = actM[x[3]] || new Set()).add(x[0]);
+    });
+    const porMarca = P.ranking.map(n => {
+      const i = ds.marcas.indexOf(n), target = P.marca(n).target;
+      const act = actM[i] ? actM[i].size : 0;
+      const meta = Math.round(baseAlcance * target / 100);
+      const faltan = Math.max(0, meta - act);
+      return {
+        marca: n, foco: P.foco.indexOf(n) > -1, target, cartera: baseAlcance, meta, activados: act, faltan, vol: volM[i] || 0,
+        pctCartera: baseAlcance ? 100 * act / baseAlcance : 0,
+        pct: meta ? 100 * act / meta : (target === 0 ? 100 : null),
+        pendiente: meta ? Math.max(0, 100 - 100 * act / meta) : 0,
+        porDia: porDia(faltan)
+      };
+    });
+
+    return {
+      medida: med, marca: mk, target: tgt, vendedor: opt.vendedor || "TODOS",
+      supervisores, vendedores, porMarca, total: tot,
+      bases: { universo: P.universo, alcance: baseAlcance, carteras: vendedores.reduce((a, v) => a + v.cartera, 0) },
+      dias: { transcurridos: T.diasTrans, habiles: T.habiles, restantes: T.restantes, corte: T.corte },
+      meta: { archivo: ds.archivo, desde: ds.dias[0], hasta: ds.dias[ds.dias.length - 1], mes: ds.mes }
+    };
+  }
+
+  /* ---------- CLIENTES ACTIVADOS ---------- */
+  function clientesDe(ds, cfg, opt) {
+    opt = opt || {};
+    const P = params(ds, cfg);
+    const mk = opt.marca && opt.marca !== "TODAS" ? opt.marca : "TODAS";
+    const mi = mk === "TODAS" ? -1 : ds.marcas.indexOf(mk);
+    const vFil = opt.vendedor && opt.vendedor !== "TODOS" ? ds.vends.indexOf(opt.vendedor) : -1;
+    const filas = (vFil < 0 ? ds.r : ds.r.filter(x => x[2] === vFil)).filter(x => (x[8] || 0) !== TIPO_DOC.NC_TESORERIA);
+
+    const mapa = new Map();
+    filas.forEach(x => {
+      const [c, z, v, m, d, kg, us] = x;
+      if (!mapa.has(c)) mapa.set(c, {
+        codigo: ds.clientes[c], nombre: (ds.clientesNom || [])[c] || ds.clientes[c],
+        ruc: (ds.clientesRuc || [])[c] || "", vendedor: ds.vends[v], zona: ds.zonas[z],
+        supervisor: P.vend(ds.vends[v], v).sup,
+        monto: 0, kilos: 0, montoTotal: 0, dia: -1, facturas: 0, conFactura: false, marcas: new Set()
+      });
+      const C = mapa.get(c);
+      C.montoTotal += us;
+      if ((x[8] || 0) === TIPO_DOC.FACTURA && us > 0) C.marcas.add(m);
+      if (mi < 0 || m === mi) {
+        C.monto += us; C.kilos += kg;
+        if ((x[8] || 0) === TIPO_DOC.FACTURA) {
+          C.facturas++;
+          if (us > 0) C.conFactura = true;
+          if (d > C.dia) C.dia = d;
+        }
+      }
+    });
+    const lista = Array.from(mapa.values()).map(C => {
+      C.activado = C.conFactura;
+      C.ultima = C.dia >= 0 ? ds.dias[C.dia] : "—";
+      C.nMarcas = C.marcas.size;
+      return C;
+    }).sort((a, b) => b.monto - a.monto || a.nombre.localeCompare(b.nombre));
+    return {
+      marca: mk, vendedor: opt.vendedor || "TODOS", lista,
+      activados: lista.filter(c => c.activado).length, atendidos: lista.length,
+      kilos: lista.reduce((a, c) => a + c.kilos, 0), monto: lista.reduce((a, c) => a + c.monto, 0)
+    };
+  }
+
+  /* ---------- ROLLING DE VOLUMEN: por asesor y por marca ---------- */
+  function rolling(ds, cfg, opt) {
+    opt = opt || {};
+    const P = params(ds, cfg);
+    const med = medidaDe(opt.medida || P.medida);
+    const T = tiempos(ds, opt.corte != null ? opt.corte : P.corte, P.fer);
+    const diaCorte = ds.dias.indexOf(T.corte);
+    const mesV = {}, diaV = {}, mesM = {}, diaM = {};
+    ds.r.forEach(x => {
+      if ((x[8] || 0) === TIPO_DOC.NC_TESORERIA) return;
+      const v = x[med.i];
+      mesV[x[2]] = (mesV[x[2]] || 0) + v; mesM[x[3]] = (mesM[x[3]] || 0) + v;
+      if (x[4] === diaCorte) { diaV[x[2]] = (diaV[x[2]] || 0) + v; diaM[x[3]] = (diaM[x[3]] || 0) + v; }
+    });
+    const linea = (cuota, venta, ventaDia) => {
+      const proy = venta / T.tt, falta = Math.max(0, cuota - venta);
+      return { cuota, ventaDia, venta, falta, proyeccion: proy,
+               cumpl: cuota ? 100 * venta / cuota : null,
+               necesidad: cuota ? falta / T.restantes : 0,
+               cumplProy: cuota ? 100 * proy / cuota : null };
+    };
+    const suma = arr => {
+      const S = arr.reduce((a, v) => ({ cuota: a.cuota + v.cuota, ventaDia: a.ventaDia + v.ventaDia, venta: a.venta + v.venta,
+        necesidad: a.necesidad + v.necesidad, proyeccion: a.proyeccion + v.proyeccion, falta: a.falta + v.falta }),
+        { cuota: 0, ventaDia: 0, venta: 0, necesidad: 0, proyeccion: 0, falta: 0 });
+      S.cumpl = S.cuota ? 100 * S.venta / S.cuota : null;
+      S.cumplProy = S.cuota ? 100 * S.proyeccion / S.cuota : null;
+      return S;
+    };
+
+    const vendedores = ds.vends.map((nom, i) => {
+      const pv = P.vend(nom, i), cuota = pv[med.cuota];
+      if (!mesV[i] && !cuota) return null;
+      return Object.assign({ vendedor: nom, supervisor: pv.sup }, linea(cuota, mesV[i] || 0, diaV[i] || 0));
+    }).filter(Boolean);
+    const mapa = new Map();
+    vendedores.forEach(v => { if (!mapa.has(v.supervisor)) mapa.set(v.supervisor, []); mapa.get(v.supervisor).push(v); });
+    const supervisores = Array.from(mapa.entries()).map(([sup, equipo]) =>
+      Object.assign(suma(equipo), { supervisor: sup, equipo: equipo.sort((a, b) => b.venta - a.venta) }))
+      .sort((a, b) => b.venta - a.venta);
+
+    const marcas = P.ranking.map(n => {
+      const i = ds.marcas.indexOf(n), cuota = P.marca(n)[med.cuota];
+      return Object.assign({ marca: n, foco: P.foco.indexOf(n) > -1 }, linea(cuota, mesM[i] || 0, diaM[i] || 0));
+    });
+
+    return {
+      medida: med, vendedores, supervisores, total: suma(vendedores), marcas, totalMarcas: suma(marcas),
+      sinCuotaVend: vendedores.every(v => !v.cuota), sinCuotaMarca: marcas.every(m => !m.cuota),
+      dias: { transcurridos: T.diasTrans, habiles: T.habiles, restantes: T.restantes, tt: 100 * T.tt, corte: T.corte }
+    };
+  }
+
+  /* ---------- AVANCE SEMANAL Y DÉFICIT PROGRESIVO ----------
+     1. Semana = bloque de lunes a viernes dentro del mes, sin feriados. La primera y la
+        última semana suelen quedar cortas (en octubre 2026 la semana 1 tiene solo 2 días).
+     2. La cuota del mes se reparte por DÍA HÁBIL: cada semana recibe
+        cuota x (días hábiles de la semana / días hábiles del mes). Una semana de 2 días
+        carga 2/22 de la cuota, no 1/5.
+     3. Meta acumulada al cierre de un día = cuota x días hábiles transcurridos / días hábiles del mes.
+        En la semana en curso se exige solo lo que corresponde a los días ya vividos.
+     4. Déficit = meta acumulada − real acumulado, solo con la data facturada hasta ese día. */
+  function semanasDelMes(y, m, fer) {
+    const n = new Date(y, m, 0).getDate();
+    const sem = []; let actual = null, antes = 0;
+    for (let d = 1; d <= n; d++) {
+      const w = new Date(y, m - 1, d).getDay();
+      if (w === 0 || w === 6) continue;
+      if (!actual || w === 1) { actual = { n: sem.length + 1, desde: d, hasta: d, dias: 0, habAntes: antes, feriados: 0 }; sem.push(actual); }
+      actual.hasta = d;
+      if (esHabil(y, m, d, fer)) { actual.dias++; antes++; } else actual.feriados++;
+    }
+    return sem.filter(s => s.dias > 0).map((s, i) => Object.assign(s, { n: i + 1 }));
+  }
+
+  /* índice del último día del dataset que no supera la fecha dada */
+  function indiceHasta(ds, f) {
+    let k = -1;
+    ds.dias.forEach((t, i) => { const g = parseFecha(t); if (g && valorFecha(g) <= valorFecha(f)) k = i; });
+    return k;
+  }
+
+  function semanal(ds, cfg, opt) {
+    opt = opt || {};
+    const P = params(ds, cfg);
+    const med = medidaDe(opt.medida || P.medida);
+    const mk = opt.marca && opt.marca !== "TODAS" ? opt.marca : "TODAS";
+    const mi = mk === "TODAS" ? -1 : ds.marcas.indexOf(mk);
+    const tgt = mk === "TODAS" ? 100 : P.marca(mk).target;
+    const T = tiempos(ds, opt.hasta || P.corte, P.fer);
+    const H = T.habiles;
+    const iHasta = indiceHasta(ds, T.c);
+    const sem = semanasDelMes(ds.anio, ds.mesNum, P.fer), total = sem.length;
+    const semanaDeDia = dm => { let k = 0; sem.forEach((s, i) => { if (dm >= s.desde) k = i; }); return k; };
+    const diaDelMes = ds.dias.map(f => parseInt(String(f).split("/")[0], 10));
+    const semActual = semanaDeDia(T.c.d);
+    const habEnCurso = Math.max(0, T.diasTrans - sem[semActual].habAntes);
+
+    const fueraS = new Set((opt.excluir || []).map(n => ds.marcas.indexOf(n)).filter(i => i >= 0));
+    const porVend = {};
+    ds.r.forEach(x => {
+      if ((x[8] || 0) === TIPO_DOC.NC_TESORERIA || x[4] > iHasta || fueraS.has(x[3])) return;
+      const v = x[2];
+      if (!porVend[v]) porVend[v] = { vol: sem.map(() => 0), cli: sem.map(() => new Set()) };
+      const k = semanaDeDia(diaDelMes[x[4]]);
+      porVend[v].vol[k] += x[med.i];
+      if ((x[8] || 0) === TIPO_DOC.FACTURA && x[6] > 0 && (mi < 0 || x[3] === mi)) porVend[v].cli[k].add(x[0]);
+    });
+
+    const nombres = new Set(Object.keys(porVend).map(Number));
+    ds.vends.forEach((n, i) => { const pv = P.vend(n, i); if (pv[med.cuota] || pv.cartera) nombres.add(i); });
+
+    const filas = Array.from(nombres).map(i => {
+      const nom = ds.vends[i], pv = P.vend(nom, i);
+      const base = pv.cartera != null ? pv.cartera : 0;
+      const metaCli = Math.round(base * tgt / 100), cuota = pv[med.cuota];
+      if (!base && !cuota) return null;
+      const D = porVend[i] || { vol: sem.map(() => 0), cli: sem.map(() => new Set()) };
+      const vistos = new Set();
+      let volAcum = 0;
+      const semanas = sem.map((S, k) => {
+        D.cli[k].forEach(c => vistos.add(c));
+        volAcum += D.vol[k];
+        const estado = k < semActual ? "cerrada" : k === semActual ? "en curso" : "por venir";
+        const habSem = estado === "en curso" ? habEnCurso : S.dias;          /* días exigibles de la semana */
+        const habAcum = S.habAntes + (estado === "por venir" ? S.dias : habSem);
+        const metaVolSem = cuota * S.dias / H, metaCliSem = metaCli * S.dias / H;
+        const metaVolAcum = cuota * habAcum / H, metaCliAcum = metaCli * habAcum / H;
+        const activa = estado !== "por venir";
+        return {
+          semana: S.n, desde: S.desde, hasta: S.hasta, dias: S.dias, feriados: S.feriados,
+          peso: 100 * S.dias / H, estado, transcurrida: activa, habExigibles: habSem,
+          vol: D.vol[k], volAcum: activa ? volAcum : null,
+          metaVolSem, metaVolExigible: cuota * habSem / H, metaVolAcum,
+          deficitVol: activa && cuota ? Math.max(0, metaVolAcum - volAcum) : 0,
+          clientesSem: D.cli[k].size, clientesAcum: activa ? vistos.size : null,
+          metaCliSem, metaCliAcum,
+          deficitCli: activa && metaCli ? Math.max(0, Math.round(metaCliAcum - vistos.size)) : 0
+        };
+      });
+      const ult = semanas[semActual], finSem = sem[semActual];
+      const metaFinSemVol = cuota * (finSem.habAntes + finSem.dias) / H;
+      const metaFinSemCli = metaCli * (finSem.habAntes + finSem.dias) / H;
+      const diasRestSem = Math.max(0, finSem.dias - habEnCurso);
+      return {
+        vendedor: nom, supervisor: pv.sup, cartera: base, metaCli, cuota, semanas,
+        volAcum: ult.volAcum, clientesAcum: ult.clientesAcum, metaVolAcum: ult.metaVolAcum, metaCliAcum: ult.metaCliAcum,
+        deficitVol: ult.deficitVol, deficitCli: ult.deficitCli,
+        incumpleVol: ult.deficitVol > 0, incumpleCli: ult.deficitCli > 0,
+        cumplVol: ult.metaVolAcum ? 100 * ult.volAcum / ult.metaVolAcum : null,
+        cumplCli: ult.metaCliAcum ? 100 * ult.clientesAcum / ult.metaCliAcum : null,
+        /* lo que falta para llegar sano al viernes de la semana en curso */
+        faltaSemVol: Math.max(0, metaFinSemVol - ult.volAcum), faltaSemCli: Math.max(0, Math.round(metaFinSemCli - ult.clientesAcum)),
+        diasRestSem
+      };
+    }).filter(Boolean).sort((a, b) => (b.deficitCli - a.deficitCli) || (b.deficitVol - a.deficitVol));
+
+    /* totales: el volumen solo de asesores con cuota y la cobertura solo de asesores con cartera,
+       para que el cumplimiento compare lo mismo contra lo mismo. El déficit del equipo es la suma de
+       los déficits individuales: el sobrecumplimiento de uno no tapa el atraso de otro. */
+    const tot = filas.reduce((a, v) => ({
+      cuota: a.cuota + v.cuota, volAcum: a.volAcum + (v.cuota ? v.volAcum : 0), metaVolAcum: a.metaVolAcum + v.metaVolAcum,
+      deficitVol: a.deficitVol + v.deficitVol, metaCli: a.metaCli + v.metaCli, clientesAcum: a.clientesAcum + (v.metaCli ? v.clientesAcum : 0),
+      metaCliAcum: a.metaCliAcum + v.metaCliAcum, deficitCli: a.deficitCli + v.deficitCli
+    }), { cuota: 0, volAcum: 0, metaVolAcum: 0, deficitVol: 0, metaCli: 0, clientesAcum: 0, metaCliAcum: 0, deficitCli: 0 });
+    tot.cumplVol = tot.metaVolAcum ? 100 * tot.volAcum / tot.metaVolAcum : null;
+    tot.cumplCli = tot.metaCliAcum ? 100 * tot.clientesAcum / tot.metaCliAcum : null;
+
+    return {
+      medida: med, marca: mk, target: tgt, semanas: sem, total, semActual, corte: T.corte,
+      habiles: H, diasTrans: T.diasTrans, habEnCurso, feriados: P.feriados,
+      filas, totales: tot, sinCuota: filas.every(f => !f.cuota),
+      enDeficit: filas.filter(f => f.incumpleVol || f.incumpleCli)
+    };
+  }
+
+  /* ---------- CIERRE DIARIO (registro histórico congelado) ----------
+     Un cierre es la foto del déficit semanal al terminar un día, calculada solo con lo
+     facturado hasta ese día. Una vez registrado no se recalcula, salvo que se pida rehacer. */
+  const r2 = n => Math.round((n || 0) * 100) / 100;
+  function cierre(ds, cfg, fecha) {
+    const P = params(ds, cfg);
+    const U = semanal(ds, cfg, { hasta: fecha, medida: "usd", marca: "TODAS" });
+    const K = semanal(ds, cfg, { hasta: fecha, medida: "kg", marca: "TODAS" });
+    const kg = {}; K.filas.forEach(f => kg[f.vendedor] = f);
+    const f = parseFecha(fecha), iH = indiceHasta(ds, f);
+
+    const vm = {}, ve = {};
+    ds.r.forEach(x => {
+      if ((x[8] || 0) === TIPO_DOC.NC_TESORERIA || x[4] > iH) return;
+      const M = vm[x[3]] = vm[x[3]] || { us: 0, kg: 0, cli: new Set(), usDia: 0 };
+      M.us += x[6]; M.kg += x[5];
+      if (x[4] === iH) M.usDia += x[6];
+      if ((x[8] || 0) === TIPO_DOC.FACTURA && x[6] > 0) M.cli.add(x[0]);
+      if (x[4] === iH) ve[x[2]] = (ve[x[2]] || 0) + x[6];
+    });
+    const avance = U.diasTrans / U.habiles;
+    const marcas = P.ranking.map(n => {
+      const i = ds.marcas.indexOf(n), M = vm[i] || { us: 0, kg: 0, cli: new Set(), usDia: 0 }, pm = P.marca(n);
+      return { m: n, foco: P.foco.indexOf(n) > -1 ? 1 : 0, us: r2(M.us), usDia: r2(M.usDia), kg: r2(M.kg), act: M.cli.size,
+               cuUs: pm.cuotaUsd, cuKg: pm.cuotaKg, metaUs: r2(pm.cuotaUsd * avance), metaKg: r2(pm.cuotaKg * avance), tgt: pm.target };
+    }).filter(m => m.us || m.cuUs || m.cuKg);
+
+    const vendedores = U.filas.map(u => {
+      const k = kg[u.vendedor] || {}, iv = ds.vends.indexOf(u.vendedor);
+      const sa = u.semanas[U.semActual], sk = k.semanas ? k.semanas[U.semActual] : {};
+      return {
+        v: u.vendedor, sup: u.supervisor, cartera: u.cartera, metaCli: u.metaCli,
+        cli: u.clientesAcum, metaCliAcum: r2(u.metaCliAcum), defCli: u.deficitCli, faltaSemCli: u.faltaSemCli,
+        usDia: r2(ve[iv] || 0),
+        us: { cuota: u.cuota, acum: r2(u.volAcum), meta: r2(u.metaVolAcum), def: r2(u.deficitVol), sem: r2(sa.vol), metaSem: r2(sa.metaVolSem), falta: r2(u.faltaSemVol) },
+        kg: { cuota: k.cuota || 0, acum: r2(k.volAcum), meta: r2(k.metaVolAcum), def: r2(k.deficitVol), sem: r2(sk.vol), metaSem: r2(sk.metaVolSem), falta: r2(k.faltaSemVol) }
+      };
+    });
+    const S = U.semanas[U.semActual];
+    return {
+      fecha: fechaTxt(f), iso: isoDe(fechaTxt(f)), mes: ds.mes, archivo: ds.archivo, registrado: Date.now(),
+      diaHabil: U.diasTrans, habiles: U.habiles, semana: S.n, semanas: U.total,
+      semanaDesde: S.desde, semanaHasta: S.hasta, diasSemana: S.dias, habEnCurso: U.habEnCurso,
+      habil: esHabil(f.y, f.m, f.d, P.fer) ? 1 : 0, universo: P.universo,
+      calendario: U.semanas.map(s => ({ n: s.n, desde: s.desde, hasta: s.hasta, dias: s.dias, feriados: s.feriados })),
+      totales: {
+        us: { cuota: U.totales.cuota, acum: r2(U.totales.volAcum), meta: r2(U.totales.metaVolAcum), def: r2(U.totales.deficitVol) },
+        kg: { cuota: K.totales.cuota, acum: r2(K.totales.volAcum), meta: r2(K.totales.metaVolAcum), def: r2(K.totales.deficitVol) },
+        cli: { meta: r2(U.totales.metaCliAcum), acum: U.totales.clientesAcum, def: U.totales.deficitCli },
+        enDeficit: U.enDeficit.length, asesores: U.filas.length
+      },
+      vendedores, marcas
+    };
+  }
+
+  /* días del archivo que ya terminaron: todos menos el último, y el último si es anterior a hoy */
+  function diasCerrados(ds, incluirUltimo) {
+    const hoy = new Date(), vHoy = hoy.getFullYear() * 1e4 + (hoy.getMonth() + 1) * 100 + hoy.getDate();
+    return ds.dias.filter((t, i) => {
+      const f = parseFecha(t); if (!f) return false;
+      if (i < ds.dias.length - 1) return true;
+      return incluirUltimo || valorFecha(f) < vHoy;
+    });
+  }
+  const historialVacio = () => ({ version: "historial-1", cierres: {} });
+  function fusionarHistorial(a, b) {
+    const h = historialVacio();
+    [a, b].forEach(x => Object.entries((x && x.cierres) || {}).forEach(([k, c]) => {
+      if (!h.cierres[k] || (c.registrado || 0) > (h.cierres[k].registrado || 0)) h.cierres[k] = c;
+    }));
+    return h;
+  }
+  /* registra los cierres que faltan; con rehacer=true reemplaza los del mes del archivo */
+  function registrarCierres(ds, cfg, hist, op) {
+    op = op || {};
+    const h = fusionarHistorial(hist, null), nuevos = [];
+    diasCerrados(ds, op.incluirUltimo).forEach(t => {
+      const k = isoDe(t);
+      if (h.cierres[k] && !op.rehacer) return;
+      h.cierres[k] = cierre(ds, cfg, t); nuevos.push(t);
+    });
+    h.actualizado = Date.now();
+    return { historial: h, nuevos };
+  }
+  async function cargarHistorial() {
+    let remoto = null, error = null;
+    try {
+      const res = await fetch("historial.json?v=" + Date.now(), { cache: "no-store" });
+      if (res.ok) { const j = await res.json(); if (j && j.cierres) remoto = j; else error = "historial.json sin formato"; }
+      else error = "historial.json respondió " + res.status;
+    } catch (e) { error = e.message; }
+    const local = leerLocal("historial");
+    return { h: fusionarHistorial(remoto, local), remoto: !!remoto, local: !!local, error };
+  }
+
+
+  /* ---------- RESUMEN PERSONALIZADO POR ASESOR (modelo "Seguimiento por Asesor") ----------
+     Targets por subcategoría para la marca con detalle por categoría (tabla de cumplimiento Nestlé).
+     Chocolates y galletas se miden sobre la cartera Confites; el resto sobre la cartera A&B. */
+  const TARGETS_SUB = { "CALDOS": 75, "SOPAS": 75, "LECHE CONDENSADA": 20, "CHOCOLATES": 85, "GALLETAS": 70,
+    "CERELAC": 40, "NESTEA": 25, "NESTUM": 30, "LA CAMPESINA": 20, "NUTRIRINDE": 20 };
+  const SUB_CONFITES = ["CHOCOLATES", "GALLETAS"];
+  const MESES = ["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"];
+
+  function reporteAsesores(ds, cfg, opt) {
+    opt = opt || {};
+    const P = params(ds, cfg);
+    const mR = medidaDe(opt.medidaRoll || "kg"), mM = medidaDe(opt.medidaMarcas || "usd");
+    const metaAct = hay(opt.metaAct) ? num(opt.metaAct) : 85;
+    const T = tiempos(ds, opt.hasta || P.corte, P.fer);
+    const iH = indiceHasta(ds, T.c);
+    const det = opt.marcaDetalle && ds.marcas.indexOf(opt.marcaDetalle) > -1 ? ds.marcas.indexOf(opt.marcaDetalle) : -1;
+    const marcasSel = (opt.marcas || []).map(n => ds.marcas.indexOf(n)).filter(i => i >= 0 && i !== det && !(opt.excluir || []).includes(ds.marcas[i]));
+    const subTgt = Object.assign({}, TARGETS_SUB, (cfg && cfg.subTargets) || {});
+    const supSel = opt.supervisores && opt.supervisores.length ? new Set(opt.supervisores) : null;
+    const fuera = new Set((opt.excluir || []).map(n => ds.marcas.indexOf(n)).filter(i => i >= 0));
+    const aseSel = opt.asesores && opt.asesores.length ? new Set(opt.asesores) : null;
+
+    const V = {};
+    const acc = () => ({ act: new Set(), us: 0, kg: 0 });
+    ds.r.forEach(x => {
+      if ((x[8] || 0) === TIPO_DOC.NC_TESORERIA || x[4] > iH || fuera.has(x[3])) return;
+      const v = x[2], activa = (x[8] || 0) === TIPO_DOC.FACTURA && x[6] > 0;
+      const A = V[v] = V[v] || { tot: acc(), marcas: {}, subs: {} };
+      A.tot.us += x[6]; A.tot.kg += x[5]; if (activa) A.tot.act.add(x[0]);
+      const M = A.marcas[x[3]] = A.marcas[x[3]] || acc();
+      M.us += x[6]; M.kg += x[5]; if (activa) M.act.add(x[0]);
+      if (x[3] === det) {
+        const S = A.subs[x[9]] = A.subs[x[9]] || acc();
+        S.us += x[6]; S.kg += x[5]; if (activa) S.act.add(x[0]);
+      }
+    });
+    const volDe = (A, m) => A ? (m.i === 6 ? A.us : A.kg) : 0;
+    const universo = P.universo || 1;
+
+    /* subcategorías de la marca con detalle: las que tienen target; si ninguna, todas con el target por defecto */
+    const esNestleDet = det > -1 && /NESTL/.test(ds.marcas[det]);
+    const subsDet = det < 0 ? [] : Array.from(new Set(ds.r.filter(x => x[3] === det).map(x => ds.subs[x[9]])));
+    let subsEval = subsDet.filter(sb => subTgt[sb] != null && subTgt[sb] > 0);
+    const conTargetPropio = subsEval.length > 0;
+    if (!conTargetPropio) subsEval = subsDet;
+    Object.keys(TARGETS_SUB).forEach(sb => { if (conTargetPropio && esNestleDet && subsEval.indexOf(sb) < 0) subsEval.push(sb); });
+
+    const asesores = ds.vends.map((nom, i) => {
+      const pv = P.vend(nom, i), base = CARTERAS[pv.clave] || {};
+      const A = V[i];
+      const cartera = pv.cartera != null ? pv.cartera : (A ? A.tot.act.size : 0);
+      if (!cartera && !A) return null;
+      if (supSel && !supSel.has(pv.sup)) return null;
+      if (aseSel && !aseSel.has(nom)) return null;
+      const act = A ? A.tot.act.size : 0;
+      const real = volDe(A && A.tot, mR), cuota = pv[mR.cuota];
+      const faltan = cuota ? Math.max(0, cuota - real) : null;
+      const metaCli = Math.ceil(cartera * metaAct / 100);
+      const categorias = subsEval.map(sb => {
+        const k = ds.subs.indexOf(sb), S = A && k > -1 ? A.subs[k] : null;
+        const esConf = SUB_CONFITES.indexOf(sb) > -1;
+        const b = esNestleDet ? ((esConf ? base.conf : base.ab) || cartera) : cartera;
+        const tgt = conTargetPropio ? subTgt[sb] : P.targetDef;
+        const a = S ? S.act.size : 0, pct = b ? 100 * a / b : 0;
+        return { cat: sb, activados: a, base: b, pct, target: tgt, cumpl: tgt ? 100 * pct / tgt : null, vol: volDe(S, mR) };
+      }).sort((x, y) => (x.cumpl || 0) - (y.cumpl || 0) || x.cat.localeCompare(y.cat));
+      const detalle = det < 0 ? null : (() => {
+        const M = A ? A.marcas[det] : null;
+        return { marca: ds.marcas[det], activados: M ? M.act.size : 0, vol: volDe(M, mR) };
+      })();
+      const marcas = marcasSel.map(mi => {
+        const n = ds.marcas[mi], M = A ? A.marcas[mi] : null, pm = P.marca(n);
+        const a = M ? M.act.size : 0, cuotaM = pm[mM.cuota] ? pm[mM.cuota] * cartera / universo : 0;
+        const venta = volDe(M, mM);
+        return { marca: n, cartera, activos: a, pct: cartera ? 100 * a / cartera : 0, target: pm.target,
+                 cuota: cuotaM, venta, pctVol: cuotaM ? 100 * venta / cuotaM : null };
+      });
+      return {
+        vendedor: nom, supervisor: pv.sup, enEstructura: pv.enEstructura,
+        cartera, activados: act, pctAct: cartera ? 100 * act / cartera : null,
+        real, cuota, pctRoll: cuota ? 100 * real / cuota : null, faltan,
+        porDia: faltan != null ? faltan / T.restantes : null,
+        metaCli, faltanCli: Math.max(0, metaCli - act),
+        detalle, categorias, marcas
+      };
+    }).filter(Boolean);
+
+    const grupos = new Map();
+    asesores.forEach(a => { if (!grupos.has(a.supervisor)) grupos.set(a.supervisor, []); grupos.get(a.supervisor).push(a); });
+    const supervisiones = Array.from(grupos.entries()).map(([sup, eq]) => {
+      const t = eq.reduce((o, a) => ({ cartera: o.cartera + a.cartera, act: o.act + a.activados, real: o.real + (a.cuota ? a.real : 0), cuota: o.cuota + (a.cuota || 0) }), { cartera: 0, act: 0, real: 0, cuota: 0 });
+      return { supervisor: sup, asesores: eq, totales: Object.assign(t, { pctAct: t.cartera ? 100 * t.act / t.cartera : null, pctRoll: t.cuota ? 100 * t.real / t.cuota : null, faltan: t.cuota ? Math.max(0, t.cuota - t.real) : null }) };
+    }).sort((a, b) => a.supervisor.localeCompare(b.supervisor));
+
+    const ultHabil = habilesHasta(ds.anio, ds.mesNum, new Date(ds.anio, ds.mesNum, 0).getDate(), P.fer);
+    return {
+      medidaRoll: mR, medidaMarcas: mM, metaAct, marcaDetalle: det < 0 ? null : ds.marcas[det], subsConTarget: conTargetPropio,
+      meta: { corte: T.corte, mes: ds.mes, mesNombre: MESES[ds.mesNum - 1] + " " + ds.anio, diasTrans: T.diasTrans, habiles: T.habiles,
+              restantes: Math.max(0, T.habiles - T.diasTrans), tt: 100 * T.diasTrans / T.habiles, parcial: T.diasTrans < ultHabil, archivo: ds.archivo },
+      supervisiones, supervisoresTodos: Array.from(new Set(ds.vends.map((n, i) => P.vend(n, i).sup))).sort()
+    };
+  }
+
+  /* ---------- RESUMEN NARRATIVO ---------- */
+  function narrativa(M) {
+    const g = M.glob, m = M.meta, md = M.medida;
+    const p = [];
+    p.push(`Entre el ${m.desde} y el ${m.hasta} se procesaron ${f0(m.registros)} líneas de facturación de ${f0(g.marcasActivas)} marcas. Se registraron ${f0(g.activados)} clientes con venta efectiva sobre un ${m.origenUniverso} de ${f0(g.universo)}, es decir ${fp(g.pctAct)} de cobertura del portafolio, y ${f0(g.noActivados)} clientes sin compra en el período. El corte cubre ${m.diasTrans} de ${m.habiles} días hábiles del mes ${m.mes}, por lo que las proyecciones aplican un factor de ${m.factor.toFixed(2)} sobre el ritmo actual.`);
+
+    p.push(`La venta del período suma ${fu(g.venta)} y ${f1(g.kilos)} kg. Las ${f0(g.n80)} primeras marcas concentran el 80% de la venta y las cinco mayores el ${fp(g.top5)}. Cada cliente activo compra en promedio ${f1(g.profundidad)} marcas, con una venta media de ${fu(g.ventaCliente)} por cliente.`);
+
+    if (g.cuotaTotal) p.push(`Contra la cuota total del portafolio de ${md.fmt(g.cuotaTotal)}, el avance es de ${fp(g.cumplTotal)} y la proyección de cierre llega a ${md.fmt(g.volProy)} (${fp(g.cumplTotalProy)}), ${g.faltanteTotalProy > 0 ? md.fmt(g.faltanteTotalProy) + " por debajo del objetivo" : "superándolo en " + md.fmt(Math.abs(g.faltanteTotalProy))}.`);
+    else p.push(`Aún no hay cuotas de volumen cargadas por marca; al definirlas en el panel administrativo este resumen incorporará el avance y la proyección contra objetivo.`);
+
+    const ord = M.foco.slice().sort((a, b) => (b.cumpl || 0) - (a.cumpl || 0));
+    if (ord.length) {
+      const mejor = ord[0], peor = ord[ord.length - 1];
+      const faltan = M.foco.reduce((a, c) => a + c.faltan, 0), cerradas = M.foco.filter(c => c.cumpl >= 100).length;
+      p.push(`En las ${M.foco.length} marcas foco, que representan el ${fp(g.focoShare)} de la venta, el cumplimiento promedio de activación es de ${fp(g.cumplFoco)}. ${mejor.marca} lidera con ${fp(mejor.pct)} de cobertura frente a un target de ${mejor.target}%, mientras que ${peor.marca} es la más rezagada con ${fp(peor.pct)} frente a ${peor.target}% y requiere ${f0(peor.faltan)} clientes adicionales. ${cerradas === 0 ? "Ninguna marca foco alcanza todavía su target" : cerradas + " de " + M.foco.length + " marcas foco ya alcanzan su target"}; el esfuerzo pendiente suma ${f0(faltan)} activaciones cliente-marca, equivalentes a ${f0(faltan / Math.max(1, m.restantes))} por día hábil restante.`);
+    }
+
+    const cat = M.categorias[0], zona = M.zonas[0], ven = M.vendedores[0];
+    if (cat && zona && ven) p.push(`Por mix, ${cat.categoria} aporta el ${fp(cat.share)} de la venta. La zona ${zona.zona} concentra el mayor volumen con ${md.fmt(zona.vol)} y ${f0(zona.clientes)} ${zona.clientes === 1 ? "cliente activo" : "clientes activos"}, y el mayor aporte individual es de ${ven.vendedor} con ${md.fmt(ven.vol)}. La palanca macro más directa es ampliar la profundidad de marcas en los clientes que ya compran: cada marca adicional por cliente activo suma una activación sin abrir un punto de venta nuevo.`);
+    return p;
+  }
+
+  /* ---------- CARGA DEL DATASET Y PARÁMETROS ---------- */
+  const leerLocal = k => { try { const v = localStorage.getItem(PREFIJO + k); return v ? JSON.parse(v) : null; } catch (e) { return null; } };
+  const escribirLocal = (k, v) => { try { localStorage.setItem(PREFIJO + k, JSON.stringify(v)); return true; } catch (e) { return false; } };
+  const borrarLocal = k => { try { localStorage.removeItem(PREFIJO + k); } catch (e) {} };
+  const esMacro = j => j && Array.isArray(j.r) && Array.isArray(j.marcas);
+
+  async function cargarDataset(base) {
+    let error = null;
+    try {
+      const res = await fetch("dataset.json?v=" + Date.now(), { cache: "no-store", headers: { "Cache-Control": "no-cache", "Pragma": "no-cache" } });
+      if (res.ok) {
+        const j = await res.json();
+        if (esMacro(j)) {
+          const local = leerLocal("dataset");
+          /* si el navegador tiene un archivo más reciente que el repositorio, se usa el del navegador */
+          if (esMacro(local) && (local.ts || 0) > (j.ts || 0)) return { ds: local, origen: "navegador (más reciente)", error: null };
+          return { ds: j, origen: "repositorio", error: null };
+        }
+        error = "dataset.json no corresponde al modelo macro (no trae marcas)";
+      } else error = "dataset.json respondió " + res.status;
+    } catch (e) { error = e.message; }
+    const local = leerLocal("dataset");
+    if (esMacro(local)) return { ds: local, origen: "navegador", error };
+    return { ds: base, origen: "archivo base", error };
+  }
+
+  /* parámetros vigentes: los más recientes entre el navegador y los publicados con el dataset */
+  function configDe(ds) {
+    const local = leerLocal("config"), pub = ds && ds.parametros;
+    if (local && pub) return (local.ts || 0) >= (pub.ts || 0) ? local : pub;
+    return local || pub || {};
+  }
+
+  function sello(ds, origen) {
+    return `${ds.archivo || "sin archivo"} · ${ds.publicado || ds.generado || "sin fecha"} · ${origen}`;
+  }
+
+  return {
+    VERSION, TARGET_DEF, FOCO_N, CARTERAS, MAESTRO_DEF, MEDIDAS, medidaDe,
+    norm, num, pack, params, ranking, compute, computeVend, clientesDe, rolling, semanal, semanasDelMes, cierre, diasCerrados, registrarCierres, fusionarHistorial, historialVacio, cargarHistorial, isoDe, parseFecha, reporteAsesores, TARGETS_SUB,
+    narrativa, cargarDataset, configDe, sello, leerLocal, escribirLocal, borrarLocal, claveVend,
+    f0, f1, fp, fu, diasHabiles, mapaColumnas, repararHoja, tiempos
+  };
+})();
+</script>
+<script>const DATASET_BASE = {"version":"macro-1","archivo":"ReporteGeneral__12_.xlsx","generado":"2/10/2026, 1:06:48 p. m.","ts":1790946408539,"mes":"10/2026","anio":2026,"mesNum":10,"columnas":{"marca":"DescrMarca","codMarca":"CodMarca","sub":"DescrSubCategoría","cat":"DescrCategoría","fecha":"FechaFactura","cli":"CódigoCliente","nom":"RazónSocial","ruc":"RucCliente","zona":"DescZona","vend":"NombreVend","sup":"NombSuperv","kilos":"Kilos","venta":"PrecioTotal","cant":"Cantidad","doc":"NúmeroFactura","docOrigen":null,"faltantes":[]},"descartadas":{"vacias":0,"fueraMes":0,"sinMarca":0},"marcas":["MONTALBAN","CRUSTISSIMO","GALLETAS PUIG","ONCE-ONCE","PANTERA","GRUPO MIMESA","PROCESADORA NATURALYST","PLUMROSE","IPT DISTRIBUCIONES","LA NORMANDA","GUDS SUPPLY","MONACA","PAVECA","LOGISTICA N&A","SAN DOMINGO","ALIMENTOS DIFRESCA","REPRESENTACIONES DIPROPAL","BUENAVENTURA"],"subs":["AZUCAR Y DERIVADOS","PAN","GALLETAS","BIZCOCHOS","GRANOS","ACEITES Y MANTECAS","BEBIDAS NO CARBONATADAS","ENLATADOS","CARAMELOS","HARINAS","CUIDADO PERSONAL","SALSAS Y BASES","REPOSTERIA","ARROZ","CAFE","PASTAS","CUIDADO DE LA COCINA"],"cats":["VIVERES & ALIMENTOS","CONFITERIA","BEBIDAS","HIGIENE & LIMPIEZA"],"clientes":["CLADV2-000593","CLADV2-000860","CLAV1-000947","CLAV1-000835","CLAV1-001542","CLAV2-000084","CLAV1-000526","CLADV2-000644","CLADV2-000056","CLAV2-000878","CLAV2-000936","CLAV2-000959","CLAV1-000643","CLAV2-000985","CLAV1-000785","CLAV1-001000","CLAV1-000911"],"clientesNom":["EL PUNTO DEL BUEN SABOR IV, C.A.","AYDEE LUZ RUIZ CABALLERO","MARISELA SILVA GIMON, F.P","INVERSIONES TAPIAS 2023,C.A","ANY ALEISA MARQUEZ VELANDRIA","INVERSIONES N.J.J 207, C.A","PANADERÍA CHARCUTERÍA LUNCHERIA MAYELA BT,C.A.","MARIA OLAYA DEPABLOS CACERES","MARIA LOURDES ROSALES RIVERA","EVISAI SALAS ALVAREZ","WUINI SARIFE RAMOS TINOCO","ANA EVILY LOPEZ LEAL","DISTRIBUIDORA MARI-YOTS 04, C.A.","LAURA VALENTINA MARIN BOGADI","COMERCIALIZADORA CDT 33,C.A.","CARLOS ENRIQUE SALGADO PEREZ","DELFINA BENEDICCIA SALAZAR"],"clientesRuc":["J407940457","V129613250","V065039490","J503904976","V253768742","J411061832","J409665917","V103357000","V145512030","V180394245","V187098560","V158705210","J412651820","V262726165","J502198920","V104721466","V059091340"],"zonas":["Lunes TLV1","Jueves N07","Jueves N19","Lunes MAYORISTAS","Viernes N07","Lunes P07","Jueves P03","Viernes N01","Jueves N15","Viernes P01","Martes N08","Jueves N08"],"vends":["MARY SUAREZ","SUGEI VEGA","MANUEL MONTILLA","YEISON UMBRIA","KEIBER BETANCOURT","LUIS FRIAS","JEINNY NIETO","ALEXANDER BORGES","MAYLIN GUTIERREZ"],"supers":["SARA VELASQUEZ","EDGAR ORTUNO","DANNY LA CRUZ","RORAIMA SALAZAR"],"supDeVend":[0,0,0,1,0,2,3,2,3],"dias":["01/10/2026"],"r":[[0,0,0,0,0,4.5,9.97,1,0,0,0],[0,0,0,0,0,5.6,15.32,7,0,0,0],[1,1,1,1,0,2.52,6.41,6,0,1,0],[1,1,1,2,0,1.44,9.23,6,0,2,1],[2,2,2,3,0,0.21,3.78,1,0,3,1],[2,2,2,3,0,0.21,3.78,1,0,3,1],[2,2,2,4,0,2.4,7.63,6,0,4,0],[3,3,3,5,0,1.6,5.5,2,0,5,0],[3,3,3,6,0,1.8,3.98,3,0,6,2],[3,3,3,7,0,0.66,13.58,6,0,7,0],[4,4,1,8,0,20,28.32,1,0,0,0],[5,5,0,9,0,0,136.08,2,0,0,0],[6,6,4,10,0,0,2.83,1,0,8,1],[6,6,4,10,0,0.36,2.83,1,0,8,1],[7,1,1,11,0,4.5,4.8,5,0,9,0],[4,4,1,12,0,0,6.9,12,0,10,3],[7,1,1,12,0,0,6.9,12,0,10,3],[7,1,1,6,0,1.985,7.02,5,0,11,0],[8,7,5,0,0,20,30,1,0,0,0],[6,6,4,0,0,0.27,3.57,3,0,0,0],[6,6,4,0,0,0.27,3.48,3,0,0,0],[6,6,4,0,0,0.27,3.48,3,0,0,0],[9,6,4,13,0,1,5.24,1,0,12,0],[10,8,6,5,0,19.2,65.95,24,0,5,0],[11,9,7,5,0,9.6,32.98,12,0,5,0],[11,9,7,11,0,43.2,51.26,48,0,13,0],[11,9,7,8,0,20,28.32,1,0,0,0],[11,9,7,14,0,1.2,15.73,12,0,14,0],[11,9,7,14,0,2.4,27.74,12,0,14,0],[10,8,6,14,0,1.2,13.87,6,0,14,0],[10,8,6,14,0,1.2,13.94,12,0,14,0],[10,8,6,15,0,0.648,17.04,12,0,7,0],[12,10,8,13,0,60,225,60,0,0,0],[10,8,6,3,0,0.39,4.7,1,0,3,1],[10,8,6,3,0,0.18,2.23,1,0,3,1],[11,9,7,5,0,2.5,12.1,10,0,15,0],[10,8,6,16,0,0.36,6.6,2,0,3,1],[10,8,6,2,0,2.88,18.45,12,0,2,1],[13,6,4,11,0,21.6,25.63,1,0,13,0],[13,6,4,8,0,20,28.32,1,0,0,0],[13,6,4,4,0,5.448,26.78,12,0,4,0],[13,6,4,11,0,18,19.2,20,0,9,0],[13,6,4,11,0,5.4,5.9,6,0,9,0],[13,6,4,2,0,0.54,4.94,3,0,2,1],[13,6,4,0,0,20,30,1,0,0,0],[14,11,8,0,0,20,30,1,0,0,0],[10,8,6,17,0,1.02,8.71,6,0,7,0],[10,8,6,6,0,0.9,5.83,2,0,11,0],[10,8,6,17,0,0,10.8,18,0,7,0],[15,8,6,3,0,0.576,8.28,6,0,2,1],[15,8,6,11,0,18,19.2,20,0,9,0],[15,8,6,12,0,0,15.12,20,0,16,3],[16,7,5,11,0,5.4,5.9,6,0,9,0],[16,7,5,12,0,0,7.04,6,0,10,3]],"parametros":{}};</script>
+<script>
+(function(){
+  const $ = id => document.getElementById(id);
+  const { f0, f1, fp } = VJ;
+  let DS = DATASET_BASE, CFG = {};
+  const LOGO = document.querySelector(".logo").src;
+  const SECCIONES = [
+    ["comparativo", "Cuadro comparativo del equipo"],
+    ["posicion", "Posición general"],
+    ["marcas", "Cumplimiento por marca"],
+    ["semanal", "Déficit semanal"],
+    ["focos", "Focos del asesor"]
+  ];
+  const DEF = { sup: null, ase: null, mar: null, sec: ["comparativo","posicion","marcas","focos"], corte: "", medR: "kg", medM: "usd", meta: 85, umbG: 60, umb: 40, orden: "act" };
+  let SEL = Object.assign({}, DEF, VJ.leerLocal("reporte") || {});
+  SEL.sec = (SEL.sec || DEF.sec).filter(x => x !== "categorias");
+  /* Nestlé se evalúa en su propio tablero: aquí se omite de todos los cálculos */
+  const esNestle = m => /NESTL/.test(VJ.norm(m));
+  const omitidas = () => DS.marcas.filter(esNestle);
+  const guardar = () => VJ.escribirLocal("reporte", SEL);
+
+  /* ---------- formatos del documento ---------- */
+  const tc = s => String(s || "").toLowerCase().replace(/(^|[\s\-\/(&.])([a-záéíóúñ])/g, (m, a, b) => a + b.toUpperCase()).replace(/\bDe\b|\bDel\b|\bY\b/g, w => w.toLowerCase()).replace(/&/g, "&amp;");
+  const pc = n => n == null || isNaN(n) ? "—" : n.toLocaleString("es-VE", { minimumFractionDigits: 1, maximumFractionDigits: 1 }) + " %";
+  const n1 = n => n == null || isNaN(n) ? "—" : n.toLocaleString("es-VE", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
+  const n0 = n => n == null || isNaN(n) ? "—" : Math.round(n).toLocaleString("es-VE");
+  const rojo = (v, umb, txt) => `<span class="${v != null && v < umb ? "rojo" : ""}">${txt}</span>`;
+  const vol = (m, n) => m.u === "kg" ? n1(n) : (n == null ? "—" : "$" + n1(n));
+  const plural = (n, s, p) => `${n0(n)} ${n === 1 ? s : p}`;
+
+  /* ---------- controles ---------- */
+  function lista(id, items, sel, nombre){
+    $(id).innerHTML = items.length ? items.map(([v, t]) => `<label><input type="checkbox" class="chk" data-l="${id}" value="${String(v).replace(/"/g,"&quot;")}" ${sel.indexOf(v) > -1 ? "checked" : ""}> ${t}</label>`).join("") : `<span style="font-size:.78rem;color:var(--gris)">Sin ${nombre}</span>`;
+  }
+  const marcados = id => Array.from(document.querySelectorAll(`input[data-l="${id}"]:checked`)).map(i => i.value);
+
+  function controles(){
+    const P = VJ.params(DS, CFG);
+    const sups = Array.from(new Set(DS.vends.map((n, i) => P.vend(n, i).sup))).sort();
+    if (!SEL.sup) SEL.sup = sups.slice();
+    lista("lSup", sups.map(s => [s, tc(s)]), SEL.sup, "supervisiones");
+    const ases = DS.vends.map((n, i) => ({ n, sup: P.vend(n, i).sup, pv: P.vend(n, i) }))
+      .filter(a => SEL.sup.indexOf(a.sup) > -1 && (a.pv.cartera || DS.r.some(x => x[2] === DS.vends.indexOf(a.n))))
+      .sort((a, b) => a.sup.localeCompare(b.sup) || a.n.localeCompare(b.n));
+    if (!SEL.ase) SEL.ase = ases.map(a => a.n);
+    lista("lAse", ases.map(a => [a.n, `${tc(a.n)} <span style="color:var(--gris);font-size:.72rem">· ${tc(a.sup)}</span>`]), SEL.ase, "asesores");
+    const resto = P.ranking.filter(m => !esNestle(m));
+    if (!SEL.mar) SEL.mar = resto.slice(0, 8);
+    lista("lMar", resto.map(m => [m, tc(m)]), SEL.mar, "marcas");
+    lista("lSec", SECCIONES, SEL.sec, "secciones");
+    $("fCorte").innerHTML = `<option value="">Corte vigente (${DS.dias[DS.dias.length-1]})</option>` + DS.dias.slice().reverse().map(d => `<option>${d}</option>`).join("");
+    $("fCorte").value = DS.dias.indexOf(SEL.corte) > -1 ? SEL.corte : "";
+    $("fMedR").value = SEL.medR; $("fMedM").value = SEL.medM; $("fMeta").value = SEL.meta; $("fUmbG").value = SEL.umbG; $("fUmb").value = SEL.umb; $("fOrden").value = SEL.orden;
+  }
+
+  function leerControles(){
+    SEL.sup = marcados("lSup"); SEL.ase = marcados("lAse"); SEL.mar = marcados("lMar"); SEL.sec = marcados("lSec");
+    SEL.corte = $("fCorte").value; SEL.medR = $("fMedR").value; SEL.medM = $("fMedM").value;
+    SEL.meta = +$("fMeta").value || 85; SEL.umbG = +$("fUmbG").value || 0; SEL.umb = +$("fUmb").value || 0; SEL.orden = $("fOrden").value;
+  }
+
+  /* ---------- documento ---------- */
+  const tiene = s => SEL.sec.indexOf(s) > -1;
+  function ordenar(eq){
+    const k = SEL.orden;
+    return eq.slice().sort((a, b) => k === "nom" ? a.vendedor.localeCompare(b.vendedor)
+      : k === "roll" ? ((a.pctRoll ?? 999) - (b.pctRoll ?? 999)) : ((a.pctAct ?? 999) - (b.pctAct ?? 999)));
+  }
+
+  function documento(){
+    const R = VJ.reporteAsesores(DS, CFG, { hasta: SEL.corte || undefined, medidaRoll: SEL.medR, medidaMarcas: SEL.medM,
+      marcaDetalle: "", excluir: omitidas(), marcas: SEL.mar, supervisores: SEL.sup, asesores: SEL.ase, metaAct: SEL.meta });
+    const W = tiene("semanal") ? VJ.semanal(DS, CFG, { hasta: SEL.corte || undefined, medida: SEL.medR, excluir: omitidas() }) : null;
+    const defSem = {}; if (W) W.filas.forEach(f => defSem[f.vendedor] = f);
+    const m = R.meta, mR = R.medidaRoll, mM = R.medidaMarcas, uR = mR.u === "kg" ? "kg" : "US$";
+    if (!R.supervisiones.length) return `<p class="vacio-doc">No hay asesores para la selección actual. Marque al menos una supervisión y un asesor.</p>`;
+    const sub = `${m.parcial ? "Cierre parcial" : "Cierre"} ${m.mesNombre} · corte ${m.corte} · ${m.diasTrans} de ${m.habiles} días hábiles (${pc(m.tt)} del mes)`;
+
+    return R.supervisiones.map((S, si) => {
+      const eq = ordenar(S.asesores), t = S.totales;
+      const portada = `<div class="${si ? "salto" : ""}"><div class="doc-portada">
+        <img src="${LOGO}" alt="Venejugos">
+        <p class="doc-kicker">VENEJUGOS · EVALUACIÓN DE KPI'S</p>
+        <p class="doc-titulo">Seguimiento por Asesor — Equipo ${tc(S.supervisor)}</p>
+        <p class="doc-sub">${sub}</p></div>
+        ${tiene("comparativo") ? `<h2>Cuadro comparativo del equipo</h2>
+        <table><thead><tr><th>Asesor</th><th>Cartera</th><th>Act.</th><th>% Act.</th><th>${mR.u === "kg" ? "Kg reales" : "Venta US$"}</th><th>Cuota</th><th>% Rolling</th><th>Faltan ${uR}</th></tr></thead>
+        <tbody>${eq.map(a => `<tr><td>${tc(a.vendedor)}</td><td>${n0(a.cartera)}</td><td>${n0(a.activados)}</td><td>${rojo(a.pctAct, SEL.umbG, pc(a.pctAct))}</td>
+          <td>${n1(a.real)}</td><td>${a.cuota ? n0(a.cuota) : "—"}</td><td>${rojo(a.pctRoll, SEL.umbG, pc(a.pctRoll))}</td><td>${a.faltan == null ? "—" : n1(a.faltan)}</td></tr>`).join("")}</tbody></table>
+        <p class="nota">Referencia de la supervisión: ${pc(t.pctAct)} de activación y ${t.cuota ? pc(t.pctRoll) + " de rolling" : "rolling sin cuotas cargadas"}. Meta de tiempo transcurrido: ${pc(m.tt)}.</p>` : ""}</div>`;
+
+      const fichas = eq.map((a, ai) => {
+        const partes = [];
+        if (tiene("posicion")) partes.push(`<h3>Posición general</h3>
+          <table><thead><tr><th>Cartera</th><th>Activados</th><th>% Act.</th><th>${mR.u === "kg" ? "Kg reales" : "Venta US$"}</th><th>Cuota ${uR}</th><th>% Rolling</th><th>Faltan ${uR}</th></tr></thead>
+          <tbody><tr><td>${n0(a.cartera)}</td><td>${n0(a.activados)}</td><td>${rojo(a.pctAct, SEL.umbG, pc(a.pctAct))}</td><td>${n1(a.real)}</td><td>${a.cuota ? n0(a.cuota) : "—"}</td><td>${rojo(a.pctRoll, SEL.umbG, pc(a.pctRoll))}</td><td>${a.faltan == null ? "—" : n1(a.faltan)}</td></tr></tbody></table>
+          <p class="nota">${m.restantes ? `Quedan ${plural(m.restantes, "día hábil", "días hábiles")}: ` : "Mes cerrado: "}${a.cuota ? (a.faltan > 0 ? `${n1(a.porDia)} ${uR} diarios para cerrar la cuota` : "cuota cubierta") : "sin cuota cargada"}, y ${a.faltanCli > 0 ? `${plural(a.faltanCli, "cliente", "clientes")} por activar` : "ningún cliente por activar"} para llegar al ${SEL.meta} % de la cartera.</p>`);
+
+        if (tiene("marcas") && a.marcas.length) partes.push(`<h3>Cumplimiento por marca</h3>
+          <table><thead><tr><th>Marca</th><th>Cartera</th><th>Activos</th><th>% Act.</th><th>Cuota</th><th>Venta</th><th>% Vol.</th></tr></thead>
+          <tbody>${a.marcas.map(b => `<tr><td>${tc(b.marca)}</td><td>${n0(b.cartera)}</td><td>${n0(b.activos)}</td><td>${rojo(b.pct, SEL.umb, pc(b.pct))}</td><td>${b.cuota ? n1(b.cuota) : "—"}</td><td>${n1(b.venta)}</td><td>${b.pctVol == null ? "—" : rojo(b.pctVol, SEL.umb, pc(b.pctVol))}</td></tr>`).join("")}</tbody></table>
+          <p class="nota">Venta en ${mM.u === "kg" ? "kilos" : "dólares"}. La cuota de cada marca se prorratea según la cartera del asesor (cartera ÷ maestro de clientes)${a.marcas.some(b => !b.cuota) ? "; las marcas sin cuota cargada muestran —" : ""}.</p>`);
+
+        const ws = defSem[a.vendedor];
+        if (tiene("semanal") && ws) {
+          const sa = ws.semanas[W.semActual];
+          partes.push(`<h3>Déficit semanal · semana ${W.semActual + 1} de ${W.total}</h3>
+          <table><thead><tr><th>Indicador</th><th>Real acumulado</th><th>Meta acumulada</th><th>Déficit</th><th>Para cerrar la semana</th></tr></thead>
+          <tbody>${ws.cuota ? `<tr><td>Volumen (${uR})</td><td>${n1(ws.volAcum)}</td><td>${n1(ws.metaVolAcum)}</td><td>${rojo(ws.deficitVol > 0 ? 0 : 100, 1, ws.deficitVol > 0 ? n1(ws.deficitVol) : "al día")}</td><td>${ws.faltaSemVol > 0 ? n1(ws.faltaSemVol) + (ws.diasRestSem ? ` en ${plural(ws.diasRestSem, "día", "días")}` : "") : "cubierta"}</td></tr>` : ""}
+          ${ws.metaCli ? `<tr><td>Cobertura (clientes)</td><td>${n0(ws.clientesAcum)}</td><td>${n1(ws.metaCliAcum)}</td><td>${rojo(ws.deficitCli > 0 ? 0 : 100, 1, ws.deficitCli > 0 ? n0(ws.deficitCli) : "al día")}</td><td>${ws.faltaSemCli > 0 ? n0(ws.faltaSemCli) + " clientes" : "cubierta"}</td></tr>` : ""}</tbody></table>
+          <p class="nota">Meta del mes repartida por día hábil: ${W.diasTrans} de ${W.habiles} días transcurridos al ${W.corte}.</p>`);
+        }
+
+        if (tiene("focos")) {
+          const f = [];
+          f.push(["Rolling", a.cuota ? (a.faltan > 0 ? `Faltan ${n1(a.faltan)} ${uR}, equivalentes a ${n1(a.porDia)} ${uR} por día hábil restante.` : `Cuota cubierta con ${n1(a.real)} ${uR} (${pc(a.pctRoll)}).`) : "Sin cuota de volumen cargada en el panel admin."]);
+          f.push(["Activación de cartera", a.faltanCli > 0 ? `${pc(a.pctAct)} activado: faltan ${plural(a.faltanCli, "cliente", "clientes")} para el ${SEL.meta} % de la cartera${m.restantes ? `, ${n1(a.faltanCli / m.restantes)} por día hábil` : ""}.` : `Meta del ${SEL.meta} % de la cartera alcanzada (${pc(a.pctAct)}).`]);
+          if (a.marcas.length) {
+            const cm = a.marcas.filter(b => b.pct < SEL.umb);
+            f.push(["Marcas críticas", cm.length ? `Activación bajo ${SEL.umb} %: ${cm.map(b => `${tc(b.marca)} (${pc(b.pct)})`).join(", ")}.` : `Todas las marcas seleccionadas superan el ${SEL.umb} % de activación.`]);
+          }
+          if (ws && (ws.incumpleVol || ws.incumpleCli)) f.push(["Déficit semanal", `Arrastra ${[ws.incumpleVol ? n1(ws.deficitVol) + " " + uR : "", ws.incumpleCli ? plural(ws.deficitCli, "cliente", "clientes") : ""].filter(Boolean).join(" y ")} de déficit acumulado a la semana ${W.semActual + 1}.`]);
+          partes.push(`<h3>Focos de este asesor</h3><table class="focos"><thead><tr><th>Foco</th><th>Acción</th></tr></thead><tbody>${f.map(([k, v]) => `<tr><td>${k}</td><td>${v}</td></tr>`).join("")}</tbody></table>`);
+        }
+        return `<div class="salto asesor"><h2>${ai + 1}. ${tc(a.vendedor)}</h2>${partes.join("")}
+          <p class="pie-hoja">Venejugos C.A. · Evaluación de KPI's · Asesores de ${tc(S.supervisor)}</p></div>`;
+      }).join("");
+
+      const fuente = `<p class="fuente">Fuentes: dataset publicado de GLOBAL KPI (${m.archivo}, corte ${m.corte}); targets, cuotas y carteras según el panel admin. Nestlé no se incluye: se evalúa en su propio tablero${omitidas().length ? "" : " (no hay líneas Nestlé en este archivo)"}.</p>`;
+      return portada + fichas + fuente;
+    }).join("");
+  }
+
+  function pintar(){
+    leerControles(); guardar();
+    $("doc").innerHTML = documento();
+  }
+
+  /* ---------- Word ---------- */
+  function word(){
+    const css = $("estiloDoc").textContent.split("@media print")[0].replace(/\.hoja\{[^}]*\}/, "");
+    const cuerpo = $("doc").innerHTML.replace(/<div class="salto[^"]*">/g, m => m + '<br clear="all" style="page-break-before:always">').replace('<br clear="all" style="page-break-before:always">', "");
+    const html = `<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns="http://www.w3.org/TR/REC-html40">
+      <head><meta charset="utf-8"><title>Seguimiento por Asesor</title>
+      <!--[if gte mso 9]><xml><w:WordDocument><w:View>Print</w:View><w:Zoom>100</w:Zoom></w:WordDocument></xml><![endif]-->
+      <style>@page{size:21cm 29.7cm;margin:1.6cm 1.4cm} body{font-family:Arial;color:#0E1A38} ${css} .doc .pie-hoja{display:block}</style></head>
+      <body><div class="doc">${cuerpo}</div></body></html>`;
+    const sups = (SEL.sup || []).length === 1 ? "_" + SEL.sup[0].replace(/\s+/g, "_") : "";
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(new Blob(["\ufeff", html], { type: "application/msword" }));
+    a.download = `Seguimiento_Asesores${sups}_${(SEL.corte || DS.dias[DS.dias.length-1]).replace(/\//g, "-")}.doc`;
+    a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 2000);
+  }
+
+  async function cargar(){
+    const r = await VJ.cargarDataset(DATASET_BASE);
+    DS = r.ds; CFG = VJ.configDe(DS);
+    $("estado").innerHTML = `Origen: <b>${r.origen}</b>${r.error && r.origen !== "repositorio" ? " · no se pudo leer dataset.json (" + r.error + ")" : ""}`;
+    $("selloArchivo").textContent = VJ.sello(DS, r.origen);
+    $("selloMes").textContent = "Resumen " + DS.mes;
+    $("pieArchivo").textContent = `Fuente: ${DS.archivo} · procesado el ${DS.generado}${DS.publicado ? " · publicado el " + DS.publicado : ""}`;
+    controles(); pintar();
+  }
+
+  document.addEventListener("change", e => {
+    if (!e.target.closest(".tarjeta.no-print")) return;
+    if (e.target.dataset.l === "lSup") { SEL.sup = marcados("lSup"); SEL.ase = null; leerSinAse(); return; }
+    pintar();
+  });
+  function leerSinAse(){ const s = SEL.sup; leerControles(); SEL.sup = s; SEL.ase = null; controles(); pintar(); }
+  document.querySelectorAll("[data-todo],[data-nada]").forEach(b => b.addEventListener("click", () => {
+    const id = b.dataset.todo || b.dataset.nada;
+    document.querySelectorAll(`input[data-l="${id}"]`).forEach(i => i.checked = !!b.dataset.todo);
+    if (id === "lSup") { SEL.sup = marcados("lSup"); leerSinAse(); } else pintar();
+  }));
+  $("bTop8").addEventListener("click", () => { const P = VJ.params(DS, CFG); const top = P.ranking.filter(m => !esNestle(m)).slice(0, 8); leerControles(); SEL.mar = top; controles(); pintar(); });
+  ["fMeta","fUmbG","fUmb"].forEach(id => $(id).addEventListener("input", pintar));
+  $("bPrint").addEventListener("click", () => window.print());
+  $("bWord").addEventListener("click", word);
+  $("bVolver").addEventListener("click", () => window.location.href = "performance.html");
+  $("bRecargar").addEventListener("click", async () => { const b = $("bRecargar"); b.disabled = true; b.textContent = "Recargando…"; await cargar(); b.textContent = "Recargar datos"; b.disabled = false; });
+  cargar();
+})();
+</script>
+</body>
+</html>
