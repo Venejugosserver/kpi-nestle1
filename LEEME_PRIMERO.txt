@@ -1,0 +1,37 @@
+ACTUALIZACIÓN DE kpi-nestle1
+Paneles de carga (ventas y maestro), filtro de supervisor y resumen por asesor con el formato
+"Comportamiento por categoría y proyección de la semana"
+
+Archivos que se reemplazan en el repositorio:
+  admin.html        -> panel administrativo: carga del Reporte General y del maestro de clientes Nestlé
+  performance.html  -> dashboard con el nuevo filtro de Supervisor
+  reporte.html      -> resumen por asesor con la llave del panel y el formato nuevo
+  README.md         -> instrucciones actualizadas (sin la llave escrita)
+dataset.json no se toca: se actualiza al publicar desde el panel.
+
+PASO 1 · Subir los archivos a GitHub
+  1. Descomprima este ZIP.
+  2. Entre a https://github.com/Venejugosserver/kpi-nestle1
+  3. Pulse "Add file" > "Upload files".
+  4. Arrastre admin.html, performance.html, reporte.html y README.md.
+  5. Abajo pulse "Commit changes". GitHub reemplaza los archivos anteriores.
+  6. Espere 1 o 2 minutos a que GitHub Pages publique la nueva versión.
+
+PASO 2 · Cargar y publicar desde el panel administrativo
+  1. Abra https://venejugosserver.github.io/kpi-nestle1/admin.html
+     (si ve la versión vieja, recargue con Ctrl + F5).
+  2. Entre con la llave de siempre.
+  3. Tarjeta "Maestro de clientes Nestlé": cargue el maestro (CLIENTES MATRIZ NESTLE).
+  4. Tarjeta "Cargar el reporte general": cargue el Reporte General más reciente.
+  5. Tarjeta "Publicar en GitHub": pulse "Publicar ventas y maestro".
+     El registro debe decir "Publicado" y "Maestro publicado cifrado".
+
+PASO 3 · Usar el dashboard y el resumen
+  - Performance vendedores: elija un Supervisor para ver solo su equipo; la lista de
+    Vendedor se limita a los suyos.
+  - Resumen por asesor (reporte.html): escriba la misma llave del panel, elija
+    coordinaciones, asesores, categorías de la hoja de clientes y secciones, y luego
+    imprima o guarde en PDF, o descárguelo para Word.
+
+El maestro solo se vuelve a cargar cuando cambie. En las próximas cargas de ventas basta
+con el PASO 2, puntos 4 y 5.
